@@ -1,0 +1,13 @@
+Index: SCI_BleDrv.c
+===================================================================
+--- SCI_BleDrv.c	(revision 8398)
++++ SCI_BleDrv.c	(working copy)
+@@ -939,7 +939,7 @@
+ 			LifesignMissingCounter = 0;
+ 			WSBleStatus = 0;
+ 		}
+-		if(LifesignMissingCounter > 2000)
++		if(LifesignMissingCounter > 5000)
+ 		{
+ 			BLE.LifeSignStat = ERROR;
+ 			WSBleStatus = 1;
