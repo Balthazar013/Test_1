@@ -1,0 +1,5 @@
+<map id="DataHandlerControls_t" name="DataHandlerControls_t">
+<area shape="rect" id="node2" href="$dc/dce/struct_b_bridge_comm_int_data__t.html" title="Internal communication packet. " alt="" coords="5,5,163,32"/>
+<area shape="rect" id="node3" href="$d8/dd6/struct_b_bridge_comm_packet__t.html" title="External communication packet. " alt="" coords="187,5,345,32"/>
+<area shape="rect" id="node4" href="$d9/ddf/struct_fifo_buffer_instance__t.html" title="Hold the context of a FIFO&#45;Buffer instance. " alt="" coords="371,5,507,32"/>
+</map>

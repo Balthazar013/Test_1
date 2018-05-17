@@ -1,0 +1,3 @@
+<map id="IdleMode_GetNewOperatingMode" name="IdleMode_GetNewOperatingMode">
+<area shape="rect" id="node2" href="$db/d92/group___idle_mode.html#ga06819cf0bda06632a0e721104d8f094b" title="It checks whether the IDLE mode is on &quot;exit state&quot;. When yes, the main application handler shall retr..." alt="" coords="269,5,424,32"/>
+</map>

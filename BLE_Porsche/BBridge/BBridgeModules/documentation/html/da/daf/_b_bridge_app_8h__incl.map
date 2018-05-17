@@ -1,0 +1,5 @@
+<map id="src/BBridgeApp.h" name="src/BBridgeApp.h">
+<area shape="rect" id="node2" href="$d7/d69/typedefs_8h.html" title="makes it possible to use standard &quot;stdint&quot; type definitions " alt="" coords="16,155,131,181"/>
+<area shape="rect" id="node3" href="$df/d54/_b_bridge_defs_8h.html" title="Definitions and parameters to be used across the BBridge application. " alt="" coords="21,80,126,107"/>
+<area shape="rect" id="node4" href="$d8/de5/_data_handler_8h.html" title="It handles the business logics for the commands, events and responses between the BBridge and the Pan..." alt="" coords="151,80,255,107"/>
+</map>

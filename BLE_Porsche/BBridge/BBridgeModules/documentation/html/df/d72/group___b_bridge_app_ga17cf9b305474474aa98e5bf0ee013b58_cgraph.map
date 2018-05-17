@@ -1,0 +1,4 @@
+<map id="BBridge_ProcessGetCmd" name="BBridge_ProcessGetCmd">
+<area shape="rect" id="node2" href="$df/d72/group___b_bridge_app.html#ga5e2f0ebaf99c14b7ac331be382354490" title="It returns the type of a command. " alt="" coords="225,5,378,32"/>
+<area shape="rect" id="node3" href="$df/d72/group___b_bridge_app.html#gab7e482de25ae9a2d74a3d775c711e192" title="It reads 1 byte from the storage interface (NVM) " alt="" coords="226,56,377,83"/>
+</map>

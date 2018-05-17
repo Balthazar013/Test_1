@@ -1,0 +1,7 @@
+<map id="src/DataHandler.c" name="src/DataHandler.c">
+<area shape="rect" id="node3" href="$db/d5c/_b_bridge_commons_8h.html" title="Holds functions and definitions used across the project scope. " alt="" coords="5,80,144,107"/>
+<area shape="rect" id="node6" href="$d8/de5/_data_handler_8h.html" title="It handles the business logics for the commands, events and responses between the BBridge and the Pan..." alt="" coords="168,80,272,107"/>
+<area shape="rect" id="node7" href="$d9/d55/_fifo_buffer_8h.html" title="This is a universal FIFO&#45;Buffer implementation for embedded systems. " alt="" coords="347,80,433,107"/>
+<area shape="rect" id="node4" href="$df/d54/_b_bridge_defs_8h.html" title="Definitions and parameters to be used across the BBridge application. " alt="" coords="50,155,155,181"/>
+<area shape="rect" id="node5" href="$d7/d69/typedefs_8h.html" title="makes it possible to use standard &quot;stdint&quot; type definitions " alt="" coords="179,229,261,256"/>
+</map>

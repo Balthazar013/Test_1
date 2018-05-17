@@ -1,0 +1,6 @@
+<map id="BBridgeCommons_FindCMDInList" name="BBridgeCommons_FindCMDInList">
+<area shape="rect" id="node2" href="$d1/dec/group___connectable_mode.html#gac8182f5c630cf22bf27b95e498cc5c3d" title="State machine for the Connectable operating mode. " alt="" coords="291,5,455,32"/>
+<area shape="rect" id="node4" href="$db/d92/group___idle_mode.html#ga02fcd816010eef303dae09c253a49793" title="Called when a new command has been received. " alt="" coords="287,56,460,83"/>
+<area shape="rect" id="node5" href="$d1/dc9/group___scanner_mode.html#gae41753410906af9fbd0c2810a8f1015a" title="Called when a new command has been received for the Scanner mode. " alt="" coords="273,107,474,133"/>
+<area shape="rect" id="node3" href="$df/d72/group___b_bridge_app.html#ga8e64507fbe4e57d86d3c702dcd7117be" title="It handles the overall business logics for the BBridge application. On the first time, after initialization is completed, an event &quot;init ok&quot; is sent to the Panther. . " alt="" coords="523,5,629,32"/>
+</map>

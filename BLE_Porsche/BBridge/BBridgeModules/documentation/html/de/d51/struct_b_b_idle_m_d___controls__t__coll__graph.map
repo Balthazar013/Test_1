@@ -1,0 +1,7 @@
+<map id="BBIdleMD_Controls_t" name="BBIdleMD_Controls_t">
+<area shape="rect" id="node2" href="$da/d4c/struct_b_bridge_app_interface__t.html" title="callbacks and functions to interface with the BBridge module " alt="" coords="113,216,263,243"/>
+<area shape="rect" id="node3" href="$d7/d67/struct_b_bridge_connection__t.html" title="BBridgeConnection_t" alt="" coords="106,96,250,123"/>
+<area shape="rect" id="node4" href="$d6/dd8/struct_b_bridge_b_t_device__t.html" title="BBridgeBTDevice_t" alt="" coords="74,5,207,32"/>
+<area shape="rect" id="node5" href="$d7/df2/struct_b_bridge_command__t.html" title="BBridge Command. " alt="" coords="307,96,446,123"/>
+<area shape="rect" id="node6" href="$dc/dce/struct_b_bridge_comm_int_data__t.html" title="Internal communication packet. " alt="" coords="297,5,455,32"/>
+</map>

@@ -1,0 +1,31 @@
+<map id="BBridge_Init" name="BBridge_Init">
+<area shape="rect" id="node2" href="$d0/de1/group___data_handler.html#ga72c64b40605f30c004a3f77120c12141" title="It initializes the DataHandler module. " alt="" coords="195,5,312,32"/>
+<area shape="rect" id="node4" href="$df/d72/group___b_bridge_app.html#ga68d35de10f874feb3910fb4efdecc966" title="It pushes an ACK packet to be transferred to the Panther device. " alt="" coords="187,56,319,83"/>
+<area shape="rect" id="node6" href="$df/d72/group___b_bridge_app.html#ga51b26ae990fdf9e639b63281f0fa1075" title="It pushes a Negative ACK to be send to the Panther. " alt="" coords="183,107,324,133"/>
+<area shape="rect" id="node7" href="$df/d72/group___b_bridge_app.html#ga20ae2ccf9ec7030caf13b322d4157f2a" title="It pushed a new event to the Panther device;. " alt="" coords="179,157,327,184"/>
+<area shape="rect" id="node8" href="$df/d72/group___b_bridge_app.html#gad2f27a57f36768d0ab100f37e56aa3c3" title="It returns the state of the TXComplete value (TX to Panther) " alt="" coords="147,208,360,235"/>
+<area shape="rect" id="node9" href="$df/d72/group___b_bridge_app.html#ga17cf9b305474474aa98e5bf0ee013b58" title="It loads a BBridge configuration value. " alt="" coords="168,360,339,387"/>
+<area shape="rect" id="node10" href="$df/d72/group___b_bridge_app.html#ga5e2f0ebaf99c14b7ac331be382354490" title="It returns the type of a command. " alt="" coords="447,309,601,336"/>
+<area shape="rect" id="node11" href="$df/d72/group___b_bridge_app.html#gab7e482de25ae9a2d74a3d775c711e192" title="It reads 1 byte from the storage interface (NVM) " alt="" coords="449,443,599,469"/>
+<area shape="rect" id="node12" href="$df/d72/group___b_bridge_app.html#gaafe15099284fc46419b9184095f615b8" title="It sets a configuration value in the module&#39;s configuration table. If necessary it calls hardware&#45;dep..." alt="" coords="168,309,339,336"/>
+<area shape="rect" id="node13" href="$df/d72/group___b_bridge_app.html#gae88fbd0312c9153dc2f0d993186a5a47" title="It stores a byte into the storage interface (NVM) " alt="" coords="449,371,599,397"/>
+<area shape="rect" id="node14" href="$df/d72/group___b_bridge_app.html#ga2e842d594b27e3522650a59411d6938e" title="It releases the DataHandler module from a &quot;locked&quot; state. " alt="" coords="157,512,350,539"/>
+<area shape="rect" id="node16" href="$df/d72/group___b_bridge_app.html#gaf810061b5d1a67717aee7b3e66872915" title="It sets the WAKEUP line PIN. " alt="" coords="169,563,338,589"/>
+<area shape="rect" id="node17" href="$df/d72/group___b_bridge_app.html#gaf0701ec6838bdb3609ba668d03c1b5a7" title="It generates a seed to be used when calculating the key. " alt="" coords="174,613,333,640"/>
+<area shape="rect" id="node18" href="$df/d72/group___b_bridge_app.html#ga48f6ce2438d3a0b9da6896aa679a2877" title="it calculates a key based on the seed given " alt="" coords="180,664,327,691"/>
+<area shape="rect" id="node19" href="$df/d72/group___b_bridge_app.html#ga54e4a64b013fcdf4d2fd702af46c4ca2" title="Called by the operating modes (scanner or connectable) when a given connection has been validated..." alt="" coords="148,715,359,741"/>
+<area shape="rect" id="node20" href="$df/d72/group___b_bridge_app.html#ga1376402cac1465d0d58d3f184b86d473" title="It begins a connection process with the given bluetooth device addrr. " alt="" coords="161,765,345,792"/>
+<area shape="rect" id="node21" href="$df/d72/group___b_bridge_app.html#gab8d25e26773c84b39618287895084155" title="Callback called when a new Bluetooth connection is established. It processes the callback event and d..." alt="" coords="167,816,340,843"/>
+<area shape="rect" id="node24" href="$df/d72/group___b_bridge_app.html#ga2d6dbdfc9addb0d48d5ef092eeee0840" title="It calls the terminate connection function in the HW module. " alt="" coords="435,867,613,893"/>
+<area shape="rect" id="node25" href="$df/d72/group___b_bridge_app.html#gaf2c6ed870922ca74453d6626fdae4d62" title="it sets data to transferred over the Blueooth interface " alt="" coords="179,917,327,944"/>
+<area shape="rect" id="node26" href="$df/d72/group___b_bridge_app.html#ga626fd87212cfc0a10f32addc0a30542d" title="Called by the BBridge interface when a connection handle is disconnected. " alt="" coords="158,968,349,995"/>
+<area shape="rect" id="node29" href="$df/d72/group___b_bridge_app.html#ga4b6ac9de34c64b43ae8466e782d78323" title="It calls the hw function to initialize the bluetooth device with the specific given operating mode..." alt="" coords="163,1019,344,1045"/>
+<area shape="rect" id="node30" href="$df/d72/group___b_bridge_app.html#ga3001396302ae0ec7974da8a0adf0b496" title="BBridge_GetSysTime" alt="" coords="180,1069,327,1096"/>
+<area shape="rect" id="node3" href="$d5/d60/group___fifo_buffer.html#gad7ca6ce7641a6219accfd803512c6262" title="Initialisation of the FIFO&#45;Buffer instance. " alt="" coords="477,5,571,32"/>
+<area shape="rect" id="node5" href="$d0/de1/group___data_handler.html#ga8757d2e4ab9b98a1c1b929f706923875" title="It pushes &quot;internal&quot; data to be sent to the Panther device. " alt="" coords="431,99,617,141"/>
+<area shape="rect" id="node15" href="$d0/de1/group___data_handler.html#ga9db7d5aed3b4b0a4338f5dc3d0cbfa8d" title="It sets the RX buffer from Panther to &quot;free&quot;. " alt="" coords="415,505,633,546"/>
+<area shape="rect" id="node22" href="$d1/dc9/group___scanner_mode.html#gace3404c54de9456a1a05a73680f89c87" title="Called when there is a new connection event from the Bluetooth stack. " alt="" coords="429,816,619,843"/>
+<area shape="rect" id="node23" href="$d1/dec/group___connectable_mode.html#ga612b23af48ea5003e4090345726aa9f1" title="Callback called when a new Bluetooth connection (not yet validated) has been established. " alt="" coords="417,765,631,792"/>
+<area shape="rect" id="node27" href="$d1/dec/group___connectable_mode.html#ga1255a4548dcaea9360b6bc1351053bfd" title="Called when there is a disconnection event from the bluetooth HW. (connection lost included) ..." alt="" coords="408,993,640,1020"/>
+<area shape="rect" id="node28" href="$d1/dc9/group___scanner_mode.html#ga16966282756eaeec9fca655cf8ef9a31" title="Called when there is a disconnection event (connection lost included) " alt="" coords="420,943,628,969"/>
+</map>

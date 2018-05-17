@@ -1,0 +1,7 @@
+<map id="BBridge_OnBTRxData" name="BBridge_OnBTRxData">
+<area shape="rect" id="node2" href="$df/d72/group___b_bridge_app.html#gac83d7afeb4cef504bd8a1c454b606f55" title="It finds a connection index in the connections list by a connection handler. " alt="" coords="205,5,419,32"/>
+<area shape="rect" id="node3" href="$d0/de1/group___data_handler.html#gac39cd651d1160312b644fbeded876155" title="It pushes external data to be sent to the Panther device. " alt="" coords="217,57,407,98"/>
+<area shape="rect" id="node5" href="$d1/dec/group___connectable_mode.html#ga7c6ae987ef68d4a76096a45d8bb855bb" title="Called when messages from a non&#45;validated connection is received. " alt="" coords="205,123,419,149"/>
+<area shape="rect" id="node6" href="$d1/dc9/group___scanner_mode.html#ga7e5a710f6a8099be43b08e7e99edb37a" title="called by the Bluetooth interface when data is received from a non&#45; validated connection ..." alt="" coords="217,173,407,200"/>
+<area shape="rect" id="node4" href="$d5/d60/group___fifo_buffer.html#gaf40a13b378710a57a3254ab2d0c08d1d" title="Push a new element into the FIFO&#45;Buffer in dependency of the initialized behavior mode..." alt="" coords="467,64,573,91"/>
+</map>

@@ -1,0 +1,34 @@
+AWC- PAD:PFC Component History
+
+################################################################################
+DATE:2016-09-30
+################################################################################
+ARCHA updated
+
+################################################################################
+DATE:2016-09-26
+################################################################################
+http://10.241.247.135/svn/Automotive_Project_3_6kW/branches/Audi/br_TK_B31_PFC_78895/Audi/07_Development/40_SW/30_Implementation/10_WSP/23_PFC
+
+A short summary:
+1- Implement the SC18IM700 reconnection option in order to establish the connection again to PFC after occurring communication drop error.
+2- The communication drop error will be released when the reconnection attempts failed within a time window of 5 seconds.
+3- Timeout for detecting the communication drop is set to 200ms.
+
+
+
+################################################################################
+DATE:2016-09-22
+################################################################################
+The latest PFC changes have been checked-in at the following SVN LINK.
+
+http://10.241.247.135/svn/Automotive_Project_3_6kW/branches/Audi/br_TK_B31_PFC_78895/Audi/07_Development/40_SW/30_Implementation/10_WSP/23_PFC
+
+A short summary:
+1-  Error handling has been introduced to detect the reason for the PFC communication drop during charging (DMA, LIN and SC18IM700 are checked )
+2-  Error codes have been defined to indicate the state of the PFC state machine and also the occurred error (combined error code)
+3-  PFC response timeout has been integrated on the basis of the cycle time where the PFC main function is invoked
+4-  PFC state machine has been extended to handle all PFC requests in succession. one request will be handled in each two cycles
+
+TODO for next Build:  The cycle time of PFC main function has to be changed from 10ms to at least 2ms or if posssible to 1ms. 
+

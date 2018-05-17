@@ -1,0 +1,3 @@
+<map id="BBridge_OnSPIRxComplete" name="BBridge_OnSPIRxComplete">
+<area shape="rect" id="node2" href="$d0/de1/group___data_handler.html#ga6b1f8708c9a3ffa237a5a768c27e92dc" title="It receives data from the Panther. It shall be called when there is data from the SPI to the BBridge..." alt="" coords="238,5,429,46"/>
+</map>

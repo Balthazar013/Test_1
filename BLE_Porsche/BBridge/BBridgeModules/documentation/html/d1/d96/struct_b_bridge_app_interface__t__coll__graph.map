@@ -1,0 +1,6 @@
+<map id="BBridgeAppInterface_t" name="BBridgeAppInterface_t">
+<area shape="rect" id="node2" href="$d7/d67/struct_b_bridge_connection__t.html" title="BBridgeConnection_t" alt="" coords="105,96,249,123"/>
+<area shape="rect" id="node3" href="$d6/dd8/struct_b_bridge_b_t_device__t.html" title="BBridgeBTDevice_t" alt="" coords="40,5,173,32"/>
+<area shape="rect" id="node4" href="$d7/df2/struct_b_bridge_command__t.html" title="BBridge Command. " alt="" coords="273,96,412,123"/>
+<area shape="rect" id="node5" href="$dc/dce/struct_b_bridge_comm_int_data__t.html" title="Internal communication packet. " alt="" coords="263,5,421,32"/>
+</map>

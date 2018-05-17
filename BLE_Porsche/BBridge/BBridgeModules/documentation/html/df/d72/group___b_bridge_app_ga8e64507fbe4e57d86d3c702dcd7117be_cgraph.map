@@ -1,0 +1,21 @@
+<map id="BBridge_Work" name="BBridge_Work">
+<area shape="rect" id="node2" href="$d0/de1/group___data_handler.html#gac76ef53d62dbdee27296481d140fd553" title="It processes the Business logics for the Data handler. " alt="" coords="203,5,333,32"/>
+<area shape="rect" id="node3" href="$d1/dec/group___connectable_mode.html#gad4a150467007778a873b403fa87eb6e3" title="It initializes the Connectable mode module. " alt="" coords="193,56,343,83"/>
+<area shape="rect" id="node4" href="$d1/dc9/group___scanner_mode.html#gad7caa84079565bcf02847040ed00dabb" title="It initializes the Scanner mode module. " alt="" coords="205,107,331,133"/>
+<area shape="rect" id="node5" href="$db/d92/group___idle_mode.html#ga670a3aecf7534c16beeb5f4e4dba9c78" title="It initializes the IDLE operating mode module. " alt="" coords="219,157,317,184"/>
+<area shape="rect" id="node6" href="$d1/dec/group___connectable_mode.html#gac8182f5c630cf22bf27b95e498cc5c3d" title="State machine for the Connectable operating mode. " alt="" coords="186,208,350,235"/>
+<area shape="rect" id="node8" href="$d1/dec/group___connectable_mode.html#ga650667316b0404f276c57cdada84d72d" title="Check if the mode is ready to exit or not. " alt="" coords="430,284,637,311"/>
+<area shape="rect" id="node9" href="$d1/dec/group___connectable_mode.html#ga485ffa23cad46bcca9374b24d96f285e" title="To be called by the caller module when the Connectable state machine will not be executed anymore..." alt="" coords="174,309,362,336"/>
+<area shape="rect" id="node10" href="$d1/dc9/group___scanner_mode.html#ga455794846b93cf1f03c88985be43d8e2" title="Business logics implementation of the Scanner mode. (main state machine) " alt="" coords="198,360,338,387"/>
+<area shape="rect" id="node11" href="$d1/dc9/group___scanner_mode.html#ga9ded92bae6e8bc0b5e063938320be1ff" title="To be used when checking whether the module is ready to exit its operating state. ..." alt="" coords="177,411,359,437"/>
+<area shape="rect" id="node12" href="$d1/dc9/group___scanner_mode.html#ga862dce29a5d692bafabb188dc3881d2a" title="Called when the mode shall finally finish its operating state. " alt="" coords="186,461,350,488"/>
+<area shape="rect" id="node13" href="$db/d92/group___idle_mode.html#ga24bfaac2ef8c92afe569524022f611f4" title="It processes the business logics concerning the IDLE mode of the BBridge application. " alt="" coords="212,512,324,539"/>
+<area shape="rect" id="node14" href="$db/d92/group___idle_mode.html#ga06819cf0bda06632a0e721104d8f094b" title="It checks whether the IDLE mode is on &quot;exit state&quot;. When yes, the main application handler shall retr..." alt="" coords="456,588,611,615"/>
+<area shape="rect" id="node15" href="$db/d92/group___idle_mode.html#ga67ab5894d0f5210b467b1cffbc970174" title="It retrieves the new operating mode set. " alt="" coords="161,613,375,640"/>
+<area shape="rect" id="node16" href="$db/d92/group___idle_mode.html#gace3d93e89c75c036727418c45b3e9d0b" title="It &quot;exits&quot; the idle mode. This function shall be called by the main worker controlling the &quot;IDLE MODE..." alt="" coords="200,664,336,691"/>
+<area shape="rect" id="node17" href="$df/d72/group___b_bridge_app.html#ga68d35de10f874feb3910fb4efdecc966" title="It pushes an ACK packet to be transferred to the Panther device. " alt="" coords="202,715,334,741"/>
+<area shape="rect" id="node19" href="$df/d72/group___b_bridge_app.html#ga2e842d594b27e3522650a59411d6938e" title="It releases the DataHandler module from a &quot;locked&quot; state. " alt="" coords="171,769,365,796"/>
+<area shape="rect" id="node7" href="$d1/da3/group___b_bridge_commons.html#ga136a09c059aedc3d96d815511c6e7ec6" title="It searches for a command in a sorted list using Binary Search algorithm. " alt="" coords="424,208,643,235"/>
+<area shape="rect" id="node18" href="$d0/de1/group___data_handler.html#ga8757d2e4ab9b98a1c1b929f706923875" title="It pushes &quot;internal&quot; data to be sent to the Panther device. " alt="" coords="441,703,626,745"/>
+<area shape="rect" id="node20" href="$d0/de1/group___data_handler.html#ga9db7d5aed3b4b0a4338f5dc3d0cbfa8d" title="It sets the RX buffer from Panther to &quot;free&quot;. " alt="" coords="424,769,643,810"/>
+</map>

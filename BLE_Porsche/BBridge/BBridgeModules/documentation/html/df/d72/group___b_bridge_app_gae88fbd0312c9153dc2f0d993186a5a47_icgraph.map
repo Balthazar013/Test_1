@@ -1,0 +1,4 @@
+<map id="BBridge_StorageWrite" name="BBridge_StorageWrite">
+<area shape="rect" id="node2" href="$df/d72/group___b_bridge_app.html#ga7780a972e438854e25df82870b98403b" title="It initializes the BBridge module. " alt="" coords="425,5,517,32"/>
+<area shape="rect" id="node3" href="$df/d72/group___b_bridge_app.html#gaafe15099284fc46419b9184095f615b8" title="It sets a configuration value in the module&#39;s configuration table. If necessary it calls hardware&#45;dep..." alt="" coords="205,31,376,57"/>
+</map>

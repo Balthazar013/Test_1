@@ -1,0 +1,4 @@
+<map id="BBridge_DisconnectDevice" name="BBridge_DisconnectDevice">
+<area shape="rect" id="node2" href="$df/d72/group___b_bridge_app.html#ga7780a972e438854e25df82870b98403b" title="It initializes the BBridge module. " alt="" coords="454,5,546,32"/>
+<area shape="rect" id="node3" href="$df/d72/group___b_bridge_app.html#gab8d25e26773c84b39618287895084155" title="Callback called when a new Bluetooth connection is established. It processes the callback event and d..." alt="" coords="232,31,405,57"/>
+</map>

@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created with SystemDesk 4.3.0.7653-->
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://autosar.org/schema/r4.0" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+	<AR-PACKAGES>
+		<AR-PACKAGE>
+			<SHORT-NAME>AUTOSAR_Platform</SHORT-NAME>
+			<AR-PACKAGES>
+				<AR-PACKAGE>
+					<SHORT-NAME>BaseTypes</SHORT-NAME>
+					<CATEGORY>STANDARD</CATEGORY>
+					<ELEMENTS>
+						<SW-BASE-TYPE>
+							<SHORT-NAME>sint32</SHORT-NAME>
+							<CATEGORY>FIXED_LENGTH</CATEGORY>
+							<BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+							<BASE-TYPE-ENCODING>2C</BASE-TYPE-ENCODING>
+							<MEM-ALIGNMENT>32</MEM-ALIGNMENT>
+							<NATIVE-DECLARATION>signed long</NATIVE-DECLARATION>
+						</SW-BASE-TYPE>
+						<SW-BASE-TYPE>
+							<SHORT-NAME>uint32</SHORT-NAME>
+							<CATEGORY>FIXED_LENGTH</CATEGORY>
+							<BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+							<BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+							<MEM-ALIGNMENT>32</MEM-ALIGNMENT>
+							<NATIVE-DECLARATION>unsigned long</NATIVE-DECLARATION>
+						</SW-BASE-TYPE>
+						<SW-BASE-TYPE>
+							<SHORT-NAME>uint8</SHORT-NAME>
+							<CATEGORY>FIXED_LENGTH</CATEGORY>
+							<BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+							<BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+							<MEM-ALIGNMENT>8</MEM-ALIGNMENT>
+							<NATIVE-DECLARATION>unsigned char</NATIVE-DECLARATION>
+						</SW-BASE-TYPE>
+					</ELEMENTS>
+				</AR-PACKAGE>
+			</AR-PACKAGES>
+		</AR-PACKAGE>
+		<AR-PACKAGE>
+			<SHORT-NAME>Swcs</SHORT-NAME>
+			<AR-PACKAGES>
+				<AR-PACKAGE>
+					<SHORT-NAME>BT_Swcs</SHORT-NAME>
+					<AR-PACKAGES>
+						<AR-PACKAGE UUID="6da050f1-6810-4120-867d-5dae699d5283">
+							<SHORT-NAME>CMs</SHORT-NAME>
+							<ELEMENTS>
+								<COMPU-METHOD UUID="7fa607dc-f259-4821-9a7c-63d1a4334c82">
+									<SHORT-NAME>OnOff_cm</SHORT-NAME>
+									<CATEGORY>TEXTTABLE</CATEGORY>
+									<COMPU-INTERNAL-TO-PHYS>
+										<COMPU-SCALES>
+											<COMPU-SCALE>
+												<SYMBOL>OFF</SYMBOL>
+												<DESC>
+													<L-2 L="FOR-ALL" />
+												</DESC>
+												<LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+												<UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+												<COMPU-CONST>
+													<VT>OFF</VT>
+												</COMPU-CONST>
+											</COMPU-SCALE>
+											<COMPU-SCALE>
+												<SYMBOL>ON</SYMBOL>
+												<DESC>
+													<L-2 L="FOR-ALL" />
+												</DESC>
+												<LOWER-LIMIT INTERVAL-TYPE="CLOSED">255</LOWER-LIMIT>
+												<UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+												<COMPU-CONST>
+													<VT>ON</VT>
+												</COMPU-CONST>
+											</COMPU-SCALE>
+										</COMPU-SCALES>
+										<COMPU-DEFAULT-VALUE>
+											<VT>OFF</VT>
+										</COMPU-DEFAULT-VALUE>
+									</COMPU-INTERNAL-TO-PHYS>
+								</COMPU-METHOD>
+							</ELEMENTS>
+						</AR-PACKAGE>
+						<AR-PACKAGE UUID="6e3903d6-7e13-4473-87bd-685d7aee87dc">
+							<SHORT-NAME>IDTs</SHORT-NAME>
+							<ELEMENTS>
+								<IMPLEMENTATION-DATA-TYPE UUID="e73f6ff7-10d9-49a0-981e-5b3bb8ce6a76">
+									<SHORT-NAME>Current_s32</SHORT-NAME>
+									<CATEGORY>VALUE</CATEGORY>
+									<SW-DATA-DEF-PROPS>
+										<SW-DATA-DEF-PROPS-VARIANTS>
+											<SW-DATA-DEF-PROPS-CONDITIONAL>
+												<BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint32</BASE-TYPE-REF>
+											</SW-DATA-DEF-PROPS-CONDITIONAL>
+										</SW-DATA-DEF-PROPS-VARIANTS>
+									</SW-DATA-DEF-PROPS>
+								</IMPLEMENTATION-DATA-TYPE>
+								<IMPLEMENTATION-DATA-TYPE UUID="65f7ce90-179b-4974-ab7f-55f2662b799a">
+									<SHORT-NAME>ErrorCode_u32</SHORT-NAME>
+									<CATEGORY>VALUE</CATEGORY>
+									<SW-DATA-DEF-PROPS>
+										<SW-DATA-DEF-PROPS-VARIANTS>
+											<SW-DATA-DEF-PROPS-CONDITIONAL>
+												<BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint32</BASE-TYPE-REF>
+											</SW-DATA-DEF-PROPS-CONDITIONAL>
+										</SW-DATA-DEF-PROPS-VARIANTS>
+									</SW-DATA-DEF-PROPS>
+								</IMPLEMENTATION-DATA-TYPE>
+								<IMPLEMENTATION-DATA-TYPE UUID="be04c646-a42f-4bda-a3bf-6cb40b5652ac">
+									<SHORT-NAME>GenericByte</SHORT-NAME>
+									<CATEGORY>VALUE</CATEGORY>
+									<SW-DATA-DEF-PROPS>
+										<SW-DATA-DEF-PROPS-VARIANTS>
+											<SW-DATA-DEF-PROPS-CONDITIONAL>
+												<BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+											</SW-DATA-DEF-PROPS-CONDITIONAL>
+										</SW-DATA-DEF-PROPS-VARIANTS>
+									</SW-DATA-DEF-PROPS>
+								</IMPLEMENTATION-DATA-TYPE>
+								<IMPLEMENTATION-DATA-TYPE UUID="ffcbc02b-d3cf-4565-983c-e01b1ecea329">
+									<SHORT-NAME>OnOff</SHORT-NAME>
+									<CATEGORY>VALUE</CATEGORY>
+									<SW-DATA-DEF-PROPS>
+										<SW-DATA-DEF-PROPS-VARIANTS>
+											<SW-DATA-DEF-PROPS-CONDITIONAL>
+												<BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+												<COMPU-METHOD-REF DEST="COMPU-METHOD">/Swcs/BT_Swcs/CMs/OnOff_cm</COMPU-METHOD-REF>
+											</SW-DATA-DEF-PROPS-CONDITIONAL>
+										</SW-DATA-DEF-PROPS-VARIANTS>
+									</SW-DATA-DEF-PROPS>
+								</IMPLEMENTATION-DATA-TYPE>
+								<IMPLEMENTATION-DATA-TYPE UUID="f204747f-9bf3-4f19-b776-56266f1e890f">
+									<SHORT-NAME>Power_s32</SHORT-NAME>
+									<CATEGORY>VALUE</CATEGORY>
+									<SW-DATA-DEF-PROPS>
+										<SW-DATA-DEF-PROPS-VARIANTS>
+											<SW-DATA-DEF-PROPS-CONDITIONAL>
+												<BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint32</BASE-TYPE-REF>
+											</SW-DATA-DEF-PROPS-CONDITIONAL>
+										</SW-DATA-DEF-PROPS-VARIANTS>
+									</SW-DATA-DEF-PROPS>
+								</IMPLEMENTATION-DATA-TYPE>
+								<IMPLEMENTATION-DATA-TYPE UUID="e0d74f51-232a-4aee-b9d7-422ec2860110">
+									<SHORT-NAME>Voltage_s32</SHORT-NAME>
+									<CATEGORY>VALUE</CATEGORY>
+									<SW-DATA-DEF-PROPS>
+										<SW-DATA-DEF-PROPS-VARIANTS>
+											<SW-DATA-DEF-PROPS-CONDITIONAL>
+												<BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/sint32</BASE-TYPE-REF>
+											</SW-DATA-DEF-PROPS-CONDITIONAL>
+										</SW-DATA-DEF-PROPS-VARIANTS>
+									</SW-DATA-DEF-PROPS>
+								</IMPLEMENTATION-DATA-TYPE>
+							</ELEMENTS>
+						</AR-PACKAGE>
+						<AR-PACKAGE UUID="d89b4674-a051-4516-8265-d5dfa71f9e45">
+							<SHORT-NAME>SCI_Pfc</SHORT-NAME>
+							<ELEMENTS>
+								<BSW-MODULE-DESCRIPTION UUID="b481e197-a9df-4139-98ae-a32aa592183a">
+									<SHORT-NAME>BswSCI_Pfc</SHORT-NAME>
+									<CATEGORY>BSW_MODULE</CATEGORY>
+									<MODULE-ID>255</MODULE-ID>
+									<PROVIDED-ENTRYS>
+										<BSW-MODULE-ENTRY-REF-CONDITIONAL>
+											<BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Swcs/BT_Swcs/SCI_Pfc/Runnables/pfc_BswMainFunction</BSW-MODULE-ENTRY-REF>
+										</BSW-MODULE-ENTRY-REF-CONDITIONAL>
+										<BSW-MODULE-ENTRY-REF-CONDITIONAL>
+											<BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Swcs/BT_Swcs/SCI_Pfc/Calls/Pfc_Init</BSW-MODULE-ENTRY-REF>
+										</BSW-MODULE-ENTRY-REF-CONDITIONAL>
+										<BSW-MODULE-ENTRY-REF-CONDITIONAL>
+											<BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Swcs/BT_Swcs/SCI_Pfc/Calls/Pfc_DeInit</BSW-MODULE-ENTRY-REF>
+										</BSW-MODULE-ENTRY-REF-CONDITIONAL>
+									</PROVIDED-ENTRYS>
+									<INTERNAL-BEHAVIORS>
+										<BSW-INTERNAL-BEHAVIOR UUID="8b2ac68a-caca-4ff6-bb8e-5f12b73cff05">
+											<SHORT-NAME>InternalBehavior</SHORT-NAME>
+											<ENTITYS>
+												<BSW-SCHEDULABLE-ENTITY UUID="8d52d17b-7604-4985-a2fd-ff34931d8efa">
+													<SHORT-NAME>pfc_BswMainFunction</SHORT-NAME>
+													<MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+													<IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Swcs/BT_Swcs/SCI_Pfc/Runnables/pfc_BswMainFunction</IMPLEMENTED-ENTRY-REF>
+												</BSW-SCHEDULABLE-ENTITY>
+												<BSW-CALLED-ENTITY UUID="fcbf163c-98de-4937-a0ce-15aa338d9723">
+													<SHORT-NAME>Pfc_Init</SHORT-NAME>
+													<MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+													<IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Swcs/BT_Swcs/SCI_Pfc/Calls/Pfc_Init</IMPLEMENTED-ENTRY-REF>
+												</BSW-CALLED-ENTITY>
+												<BSW-CALLED-ENTITY UUID="22b1beda-fd9d-4cc4-9cf1-7b6735c3bb66">
+													<SHORT-NAME>Pfc_DeInit</SHORT-NAME>
+													<MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+													<IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/Swcs/BT_Swcs/SCI_Pfc/Calls/Pfc_DeInit</IMPLEMENTED-ENTRY-REF>
+												</BSW-CALLED-ENTITY>
+											</ENTITYS>
+											<EVENTS>
+												<BSW-TIMING-EVENT UUID="65d92783-8ac3-40fa-8d6e-502641b15f73">
+													<SHORT-NAME>PFC_Bsw_10ms_te</SHORT-NAME>
+													<STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/Swcs/BT_Swcs/SCI_Pfc/BswSCI_Pfc/InternalBehavior/pfc_BswMainFunction</STARTS-ON-EVENT-REF>
+													<PERIOD>0.01</PERIOD>
+												</BSW-TIMING-EVENT>
+											</EVENTS>
+										</BSW-INTERNAL-BEHAVIOR>
+									</INTERNAL-BEHAVIORS>
+								</BSW-MODULE-DESCRIPTION>
+								<COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE UUID="87dce3d8-1c4c-4899-b124-6ef56e2fa600">
+									<SHORT-NAME>SCI_Pfc</SHORT-NAME>
+									<DESC>
+										<L-2 L="FOR-ALL">This component (SCI_Pfc) implements the Interface version 1.0.0</L-2>
+									</DESC>
+									<PORTS>
+										<P-PORT-PROTOTYPE UUID="29a5371c-a62a-4c79-819e-9d8366484b5f">
+											<SHORT-NAME>PP_State_u8_T</SHORT-NAME>
+											<DESC>
+												<L-2 L="FOR-ALL">Description:
+   Pfc state variable</L-2>
+											</DESC>
+											<PROVIDED-COM-SPECS>
+												<NONQUEUED-SENDER-COM-SPEC>
+													<DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/IFs/SCI_Pfc_State_u8_T_if/SCI_Pfc_State_u8_TValue</DATA-ELEMENT-REF>
+													<HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+													<USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+													<INIT-VALUE>
+														<NUMERICAL-VALUE-SPECIFICATION>
+															<VALUE>0</VALUE>
+														</NUMERICAL-VALUE-SPECIFICATION>
+													</INIT-VALUE>
+												</NONQUEUED-SENDER-COM-SPEC>
+											</PROVIDED-COM-SPECS>
+											<PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Swcs/BT_Swcs/SCI_Pfc/IFs/SCI_Pfc_State_u8_T_if</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+										<P-PORT-PROTOTYPE UUID="d19cb012-45d6-498e-9f55-10c1f9593147">
+											<SHORT-NAME>PP_ErrorState_u32_T</SHORT-NAME>
+											<DESC>
+												<L-2 L="FOR-ALL">Description:
+   Error State bitfields</L-2>
+											</DESC>
+											<PROVIDED-COM-SPECS>
+												<NONQUEUED-SENDER-COM-SPEC>
+													<DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/IFs/SCI_Pfc_ErrorState_u32_T_if/SCI_Pfc_ErrorState_u32_TValue</DATA-ELEMENT-REF>
+													<HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+													<USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+													<INIT-VALUE>
+														<NUMERICAL-VALUE-SPECIFICATION>
+															<VALUE>0</VALUE>
+														</NUMERICAL-VALUE-SPECIFICATION>
+													</INIT-VALUE>
+												</NONQUEUED-SENDER-COM-SPEC>
+											</PROVIDED-COM-SPECS>
+											<PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Swcs/BT_Swcs/SCI_Pfc/IFs/SCI_Pfc_ErrorState_u32_T_if</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+										<P-PORT-PROTOTYPE UUID="c58e0d92-0557-471b-9798-be77078041eb">
+											<SHORT-NAME>PP_Vin_Rms_s32_T</SHORT-NAME>
+											<DESC>
+												<L-2 L="FOR-ALL">Description:
+   Input Voltage, RMS value</L-2>
+											</DESC>
+											<PROVIDED-COM-SPECS>
+												<NONQUEUED-SENDER-COM-SPEC>
+													<DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/IFs/SCI_Pfc_Voltage_s32_if/SCI_Pfc_Voltage_s32Value</DATA-ELEMENT-REF>
+													<HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+													<USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+													<INIT-VALUE>
+														<NUMERICAL-VALUE-SPECIFICATION>
+															<VALUE>0</VALUE>
+														</NUMERICAL-VALUE-SPECIFICATION>
+													</INIT-VALUE>
+												</NONQUEUED-SENDER-COM-SPEC>
+											</PROVIDED-COM-SPECS>
+											<PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Swcs/BT_Swcs/SCI_Pfc/IFs/SCI_Pfc_Voltage_s32_if</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+										<P-PORT-PROTOTYPE UUID="c374e266-64f9-4ce5-b06f-47683787b70c">
+											<SHORT-NAME>PP_Iin_Rms_s32_T</SHORT-NAME>
+											<DESC>
+												<L-2 L="FOR-ALL">Description:
+   Input Current, RMS value</L-2>
+											</DESC>
+											<PROVIDED-COM-SPECS>
+												<NONQUEUED-SENDER-COM-SPEC>
+													<DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/IFs/SCI_Pfc_Current_s32_if/SCI_Pfc_Current_s32Value</DATA-ELEMENT-REF>
+													<HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+													<USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+													<INIT-VALUE>
+														<NUMERICAL-VALUE-SPECIFICATION>
+															<VALUE>0</VALUE>
+														</NUMERICAL-VALUE-SPECIFICATION>
+													</INIT-VALUE>
+												</NONQUEUED-SENDER-COM-SPEC>
+											</PROVIDED-COM-SPECS>
+											<PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Swcs/BT_Swcs/SCI_Pfc/IFs/SCI_Pfc_Current_s32_if</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+										<P-PORT-PROTOTYPE UUID="7a879116-1108-4447-8c5a-ce9476d20b2a">
+											<SHORT-NAME>PP_Pin_Rms_s32_T</SHORT-NAME>
+											<DESC>
+												<L-2 L="FOR-ALL">Description:
+   Input Power, RMS value</L-2>
+											</DESC>
+											<PROVIDED-COM-SPECS>
+												<NONQUEUED-SENDER-COM-SPEC>
+													<DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/IFs/SCI_Pfc_Power_s32_if/SCI_Pfc_Power_s32Value</DATA-ELEMENT-REF>
+													<HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+													<USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+													<INIT-VALUE>
+														<NUMERICAL-VALUE-SPECIFICATION>
+															<VALUE>0</VALUE>
+														</NUMERICAL-VALUE-SPECIFICATION>
+													</INIT-VALUE>
+												</NONQUEUED-SENDER-COM-SPEC>
+											</PROVIDED-COM-SPECS>
+											<PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Swcs/BT_Swcs/SCI_Pfc/IFs/SCI_Pfc_Power_s32_if</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+										<P-PORT-PROTOTYPE UUID="92622c0f-2b5f-430f-bb91-395e4fc03cdf">
+											<SHORT-NAME>PP_Vout_Rms_s32_T</SHORT-NAME>
+											<DESC>
+												<L-2 L="FOR-ALL">Description:
+   Output Voltage, RMS value</L-2>
+											</DESC>
+											<PROVIDED-COM-SPECS>
+												<NONQUEUED-SENDER-COM-SPEC>
+													<DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/IFs/SCI_Pfc_Voltage_s32_if/SCI_Pfc_Voltage_s32Value</DATA-ELEMENT-REF>
+													<HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+													<USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+													<INIT-VALUE>
+														<NUMERICAL-VALUE-SPECIFICATION>
+															<VALUE>0</VALUE>
+														</NUMERICAL-VALUE-SPECIFICATION>
+													</INIT-VALUE>
+												</NONQUEUED-SENDER-COM-SPEC>
+											</PROVIDED-COM-SPECS>
+											<PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Swcs/BT_Swcs/SCI_Pfc/IFs/SCI_Pfc_Voltage_s32_if</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+										<P-PORT-PROTOTYPE UUID="759f6c39-4682-4bfe-be5e-16f1a0535b03">
+											<SHORT-NAME>PP_PFC_Cmd</SHORT-NAME>
+											<DESC>
+												<L-2 L="FOR-ALL">Description:
+   Command interface
+By Turn ON / OFF command, the signal IoHwAbs_Enable_AFE_b_T should be driven</L-2>
+											</DESC>
+											<PROVIDED-COM-SPECS>
+												<SERVER-COM-SPEC>
+													<OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Swcs/BT_Swcs/SCI_Pfc/IFs/PFC_Cmd_if/Turn</OPERATION-REF>
+													<QUEUE-LENGTH>1</QUEUE-LENGTH>
+												</SERVER-COM-SPEC>
+												<SERVER-COM-SPEC>
+													<OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Swcs/BT_Swcs/SCI_Pfc/IFs/PFC_Cmd_if/SetVoltage</OPERATION-REF>
+													<QUEUE-LENGTH>1</QUEUE-LENGTH>
+												</SERVER-COM-SPEC>
+												<SERVER-COM-SPEC>
+													<OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Swcs/BT_Swcs/SCI_Pfc/IFs/PFC_Cmd_if/ClearFaults</OPERATION-REF>
+													<QUEUE-LENGTH>1</QUEUE-LENGTH>
+												</SERVER-COM-SPEC>
+											</PROVIDED-COM-SPECS>
+											<PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Swcs/BT_Swcs/SCI_Pfc/IFs/PFC_Cmd_if</PROVIDED-INTERFACE-TREF>
+										</P-PORT-PROTOTYPE>
+									</PORTS>
+									<INTERNAL-BEHAVIORS>
+										<SWC-INTERNAL-BEHAVIOR UUID="b4810562-e0ff-463c-ae47-605a3b28b027">
+											<SHORT-NAME>SCI_Pfc_Swc_IB</SHORT-NAME>
+											<CATEGORY>CDD_SWC_IB</CATEGORY>
+											<DATA-TYPE-MAPPING-REFS>
+												<DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/Swcs/BT_Swcs/SCI_Pfc/DataTypeMappingSets/SCI_Pfc_DataMapping</DATA-TYPE-MAPPING-REF>
+											</DATA-TYPE-MAPPING-REFS>
+											<EVENTS>
+												<TIMING-EVENT UUID="8ee55e2f-5d3a-49fb-8da7-991fcac201ce">
+													<SHORT-NAME>PFC_Rte_10ms_te</SHORT-NAME>
+													<START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Swcs/BT_Swcs/SCI_Pfc/SCI_Pfc/SCI_Pfc_Swc_IB/pfc_MainFunction</START-ON-EVENT-REF>
+													<PERIOD>0.01</PERIOD>
+												</TIMING-EVENT>
+												<OPERATION-INVOKED-EVENT UUID="cd51dbcd-7e8f-4a76-a242-29af93d4135c">
+													<SHORT-NAME>PFC_Cmd_onTurn_oie</SHORT-NAME>
+													<START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Swcs/BT_Swcs/SCI_Pfc/SCI_Pfc/SCI_Pfc_Swc_IB/PFC_Cmd_Turn</START-ON-EVENT-REF>
+													<OPERATION-IREF>
+														<CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/SCI_Pfc/PP_PFC_Cmd</CONTEXT-P-PORT-REF>
+														<TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Swcs/BT_Swcs/SCI_Pfc/IFs/PFC_Cmd_if/Turn</TARGET-PROVIDED-OPERATION-REF>
+													</OPERATION-IREF>
+												</OPERATION-INVOKED-EVENT>
+												<OPERATION-INVOKED-EVENT UUID="5576686f-6112-4006-a14e-e4aa7ea44d4d">
+													<SHORT-NAME>PFC_Cmd_onSetVoltage_oie</SHORT-NAME>
+													<START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Swcs/BT_Swcs/SCI_Pfc/SCI_Pfc/SCI_Pfc_Swc_IB/PFC_Cmd_SetVoltage</START-ON-EVENT-REF>
+													<OPERATION-IREF>
+														<CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/SCI_Pfc/PP_PFC_Cmd</CONTEXT-P-PORT-REF>
+														<TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Swcs/BT_Swcs/SCI_Pfc/IFs/PFC_Cmd_if/SetVoltage</TARGET-PROVIDED-OPERATION-REF>
+													</OPERATION-IREF>
+												</OPERATION-INVOKED-EVENT>
+												<OPERATION-INVOKED-EVENT UUID="86632cd3-2f01-477a-998f-da734d9b2778">
+													<SHORT-NAME>PFC_Cmd_onClearFaults_oie</SHORT-NAME>
+													<START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Swcs/BT_Swcs/SCI_Pfc/SCI_Pfc/SCI_Pfc_Swc_IB/PFC_Cmd_ClearFaults</START-ON-EVENT-REF>
+													<OPERATION-IREF>
+														<CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/SCI_Pfc/PP_PFC_Cmd</CONTEXT-P-PORT-REF>
+														<TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Swcs/BT_Swcs/SCI_Pfc/IFs/PFC_Cmd_if/ClearFaults</TARGET-PROVIDED-OPERATION-REF>
+													</OPERATION-IREF>
+												</OPERATION-INVOKED-EVENT>
+											</EVENTS>
+											<HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+											<RUNNABLES>
+												<RUNNABLE-ENTITY UUID="f6528b16-0f1f-4109-b281-5a487a5934fd">
+													<SHORT-NAME>pfc_MainFunction</SHORT-NAME>
+													<MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+													<CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+													<DATA-WRITE-ACCESSS>
+														<VARIABLE-ACCESS UUID="e3e572da-f9e5-4d1a-8fd2-08161fa557a6">
+															<SHORT-NAME>DWA_PP_State_u8_T_SCI_Pfc_State_u8_TValue</SHORT-NAME>
+															<ACCESSED-VARIABLE>
+																<AUTOSAR-VARIABLE-IREF>
+																	<PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/SCI_Pfc/PP_State_u8_T</PORT-PROTOTYPE-REF>
+																	<TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/IFs/SCI_Pfc_State_u8_T_if/SCI_Pfc_State_u8_TValue</TARGET-DATA-PROTOTYPE-REF>
+																</AUTOSAR-VARIABLE-IREF>
+															</ACCESSED-VARIABLE>
+														</VARIABLE-ACCESS>
+														<VARIABLE-ACCESS UUID="e397e7e6-0bd0-4ac0-8bae-5210568439c5">
+															<SHORT-NAME>DWA_PP_ErrorState_u32_T_SCI_Pfc_ErrorState_u32_TValue</SHORT-NAME>
+															<ACCESSED-VARIABLE>
+																<AUTOSAR-VARIABLE-IREF>
+																	<PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/SCI_Pfc/PP_ErrorState_u32_T</PORT-PROTOTYPE-REF>
+																	<TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/IFs/SCI_Pfc_ErrorState_u32_T_if/SCI_Pfc_ErrorState_u32_TValue</TARGET-DATA-PROTOTYPE-REF>
+																</AUTOSAR-VARIABLE-IREF>
+															</ACCESSED-VARIABLE>
+														</VARIABLE-ACCESS>
+														<VARIABLE-ACCESS UUID="8c3cb6a5-5e08-4099-9668-e06b00299f37">
+															<SHORT-NAME>DWA_PP_Vin_Rms_s32_T_SCI_Pfc_Voltage_s32Value</SHORT-NAME>
+															<ACCESSED-VARIABLE>
+																<AUTOSAR-VARIABLE-IREF>
+																	<PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/SCI_Pfc/PP_Vin_Rms_s32_T</PORT-PROTOTYPE-REF>
+																	<TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/IFs/SCI_Pfc_Voltage_s32_if/SCI_Pfc_Voltage_s32Value</TARGET-DATA-PROTOTYPE-REF>
+																</AUTOSAR-VARIABLE-IREF>
+															</ACCESSED-VARIABLE>
+														</VARIABLE-ACCESS>
+														<VARIABLE-ACCESS UUID="0085dc64-5485-4627-b17e-7cc0af8613c4">
+															<SHORT-NAME>DWA_PP_Iin_Rms_s32_T_SCI_Pfc_Current_s32Value</SHORT-NAME>
+															<ACCESSED-VARIABLE>
+																<AUTOSAR-VARIABLE-IREF>
+																	<PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/SCI_Pfc/PP_Iin_Rms_s32_T</PORT-PROTOTYPE-REF>
+																	<TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/IFs/SCI_Pfc_Current_s32_if/SCI_Pfc_Current_s32Value</TARGET-DATA-PROTOTYPE-REF>
+																</AUTOSAR-VARIABLE-IREF>
+															</ACCESSED-VARIABLE>
+														</VARIABLE-ACCESS>
+														<VARIABLE-ACCESS UUID="dd86512f-fc83-4049-8204-8e76b406c04f">
+															<SHORT-NAME>DWA_PP_Pin_Rms_s32_T_SCI_Pfc_Power_s32Value</SHORT-NAME>
+															<ACCESSED-VARIABLE>
+																<AUTOSAR-VARIABLE-IREF>
+																	<PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/SCI_Pfc/PP_Pin_Rms_s32_T</PORT-PROTOTYPE-REF>
+																	<TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/IFs/SCI_Pfc_Power_s32_if/SCI_Pfc_Power_s32Value</TARGET-DATA-PROTOTYPE-REF>
+																</AUTOSAR-VARIABLE-IREF>
+															</ACCESSED-VARIABLE>
+														</VARIABLE-ACCESS>
+														<VARIABLE-ACCESS UUID="30fd2290-e9fe-4c86-b936-783ee2843c47">
+															<SHORT-NAME>DWA_PP_Vout_Rms_s32_T_SCI_Pfc_Voltage_s32Value</SHORT-NAME>
+															<ACCESSED-VARIABLE>
+																<AUTOSAR-VARIABLE-IREF>
+																	<PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/SCI_Pfc/PP_Vout_Rms_s32_T</PORT-PROTOTYPE-REF>
+																	<TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Swcs/BT_Swcs/SCI_Pfc/IFs/SCI_Pfc_Voltage_s32_if/SCI_Pfc_Voltage_s32Value</TARGET-DATA-PROTOTYPE-REF>
+																</AUTOSAR-VARIABLE-IREF>
+															</ACCESSED-VARIABLE>
+														</VARIABLE-ACCESS>
+													</DATA-WRITE-ACCESSS>
+													<SYMBOL>pfc_MainFunction</SYMBOL>
+												</RUNNABLE-ENTITY>
+												<RUNNABLE-ENTITY UUID="34bbb2b2-4095-416b-af6b-11a640df50cf">
+													<SHORT-NAME>PFC_Cmd_Turn</SHORT-NAME>
+													<MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+													<ARGUMENTS>
+														<RUNNABLE-ENTITY-ARGUMENT>
+															<SYMBOL>aValue</SYMBOL>
+														</RUNNABLE-ENTITY-ARGUMENT>
+													</ARGUMENTS>
+													<CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+													<SYMBOL>PFC_Cmd_Turn</SYMBOL>
+												</RUNNABLE-ENTITY>
+												<RUNNABLE-ENTITY UUID="45802ae7-772d-471f-a306-83304c96833c">
+													<SHORT-NAME>PFC_Cmd_SetVoltage</SHORT-NAME>
+													<MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+													<ARGUMENTS>
+														<RUNNABLE-ENTITY-ARGUMENT>
+															<SYMBOL>aValue</SYMBOL>
+														</RUNNABLE-ENTITY-ARGUMENT>
+													</ARGUMENTS>
+													<CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+													<SYMBOL>PFC_Cmd_SetVoltage</SYMBOL>
+												</RUNNABLE-ENTITY>
+												<RUNNABLE-ENTITY UUID="d765f2db-ca0c-4bcc-a142-61cacd41f70f">
+													<SHORT-NAME>PFC_Cmd_ClearFaults</SHORT-NAME>
+													<MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+													<ARGUMENTS>
+														<RUNNABLE-ENTITY-ARGUMENT>
+															<SYMBOL>aMask</SYMBOL>
+														</RUNNABLE-ENTITY-ARGUMENT>
+													</ARGUMENTS>
+													<CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+													<SYMBOL>PFC_Cmd_ClearFaults</SYMBOL>
+												</RUNNABLE-ENTITY>
+											</RUNNABLES>
+											<SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+										</SWC-INTERNAL-BEHAVIOR>
+									</INTERNAL-BEHAVIORS>
+								</COMPLEX-DEVICE-DRIVER-SW-COMPONENT-TYPE>
+								<BSW-IMPLEMENTATION UUID="1256f246-d90e-4699-902e-3d5e078e36eb">
+									<SHORT-NAME>SCI_Pfc_BswImpl</SHORT-NAME>
+									<CODE-DESCRIPTORS>
+										<CODE UUID="e43ce505-1268-4e29-8251-36428f9acc8a">
+											<SHORT-NAME>SRC</SHORT-NAME>
+											<ARTIFACT-DESCRIPTORS>
+												<AUTOSAR-ENGINEERING-OBJECT>
+													<SHORT-LABEL>EngObject</SHORT-LABEL>
+													<CATEGORY>SWSRC</CATEGORY>
+												</AUTOSAR-ENGINEERING-OBJECT>
+											</ARTIFACT-DESCRIPTORS>
+										</CODE>
+									</CODE-DESCRIPTORS>
+									<PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+									<RESOURCE-CONSUMPTION UUID="166412a8-b08b-4ae5-9f3c-96d1d91a8d06">
+										<SHORT-NAME>Resources</SHORT-NAME>
+										<MEMORY-SECTIONS>
+											<MEMORY-SECTION UUID="b85071d1-5c4d-448c-a7e9-7cc013ffdc53">
+												<SHORT-NAME>CODE</SHORT-NAME>
+												<SW-ADDRMETHOD-REF DEST="SW-ADDR-METHOD">/Swcs/BT_Swcs/SCI_Pfc/SCI_Pfc_SwAddrMethod</SW-ADDRMETHOD-REF>
+											</MEMORY-SECTION>
+										</MEMORY-SECTIONS>
+									</RESOURCE-CONSUMPTION>
+									<SW-VERSION>1.0.0</SW-VERSION>
+									<SWC-BSW-MAPPING-REF DEST="SWC-BSW-MAPPING">/Swcs/BT_Swcs/SCI_Pfc/cddBswSwc_mapping</SWC-BSW-MAPPING-REF>
+									<VENDOR-ID>999</VENDOR-ID>
+									<AR-RELEASE-VERSION>4.0.3</AR-RELEASE-VERSION>
+									<BEHAVIOR-REF DEST="BSW-INTERNAL-BEHAVIOR">/Swcs/BT_Swcs/SCI_Pfc/BswSCI_Pfc/InternalBehavior</BEHAVIOR-REF>
+								</BSW-IMPLEMENTATION>
+								<SW-ADDR-METHOD UUID="2b6b3506-2545-471f-abde-6397610f066f">
+									<SHORT-NAME>SCI_Pfc_SwAddrMethod</SHORT-NAME>
+									<MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME</MEMORY-ALLOCATION-KEYWORD-POLICY>
+									<SECTION-TYPE>CODE</SECTION-TYPE>
+								</SW-ADDR-METHOD>
+								<SWC-IMPLEMENTATION UUID="62124745-c24d-4114-a67f-678779f276c0">
+									<SHORT-NAME>SCI_Pfc_SwcImpl</SHORT-NAME>
+									<CODE-DESCRIPTORS>
+										<CODE UUID="7ae33d12-c0e1-44de-8931-6ee03500f57e">
+											<SHORT-NAME>SRC</SHORT-NAME>
+											<ARTIFACT-DESCRIPTORS>
+												<AUTOSAR-ENGINEERING-OBJECT>
+													<SHORT-LABEL>EngObject</SHORT-LABEL>
+													<CATEGORY>SWSRC</CATEGORY>
+												</AUTOSAR-ENGINEERING-OBJECT>
+											</ARTIFACT-DESCRIPTORS>
+										</CODE>
+									</CODE-DESCRIPTORS>
+									<PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+									<RESOURCE-CONSUMPTION UUID="3077688a-9ea0-4810-b086-cde1a9a83c7e">
+										<SHORT-NAME>Resources</SHORT-NAME>
+									</RESOURCE-CONSUMPTION>
+									<SW-VERSION>1.0.0</SW-VERSION>
+									<VENDOR-ID>999</VENDOR-ID>
+									<BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Swcs/BT_Swcs/SCI_Pfc/SCI_Pfc/SCI_Pfc_Swc_IB</BEHAVIOR-REF>
+								</SWC-IMPLEMENTATION>
+								<SWC-BSW-MAPPING UUID="e517dc60-115b-4d77-9034-a9c81e8fb4e4">
+									<SHORT-NAME>cddBswSwc_mapping</SHORT-NAME>
+									<BSW-BEHAVIOR-REF DEST="BSW-INTERNAL-BEHAVIOR">/Swcs/BT_Swcs/SCI_Pfc/BswSCI_Pfc/InternalBehavior</BSW-BEHAVIOR-REF>
+									<SWC-BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Swcs/BT_Swcs/SCI_Pfc/SCI_Pfc/SCI_Pfc_Swc_IB</SWC-BEHAVIOR-REF>
+								</SWC-BSW-MAPPING>
+							</ELEMENTS>
+							<AR-PACKAGES>
+								<AR-PACKAGE UUID="0af20396-964c-4664-9e4b-53d637cc25a4">
+									<SHORT-NAME>ADTs</SHORT-NAME>
+									<ELEMENTS>
+										<APPLICATION-PRIMITIVE-DATA-TYPE UUID="2b4d9a75-422d-4bbd-bd44-410de5fea682">
+											<SHORT-NAME>SCI_Pfc_Current_s32_adt</SHORT-NAME>
+											<CATEGORY>VALUE</CATEGORY>
+										</APPLICATION-PRIMITIVE-DATA-TYPE>
+										<APPLICATION-PRIMITIVE-DATA-TYPE UUID="b392b637-db11-4165-ae39-76f579384c3f">
+											<SHORT-NAME>SCI_Pfc_ErrorState_u32_T_adt</SHORT-NAME>
+											<CATEGORY>VALUE</CATEGORY>
+										</APPLICATION-PRIMITIVE-DATA-TYPE>
+										<APPLICATION-PRIMITIVE-DATA-TYPE UUID="2db3ead4-ff16-450d-9a5a-587b457715c9">
+											<SHORT-NAME>SCI_Pfc_OnOff_adt</SHORT-NAME>
+											<CATEGORY>VALUE</CATEGORY>
+										</APPLICATION-PRIMITIVE-DATA-TYPE>
+										<APPLICATION-PRIMITIVE-DATA-TYPE UUID="718e6e0b-530e-4a92-9d24-bdcba50c1424">
+											<SHORT-NAME>SCI_Pfc_Power_s32_adt</SHORT-NAME>
+											<CATEGORY>VALUE</CATEGORY>
+										</APPLICATION-PRIMITIVE-DATA-TYPE>
+										<APPLICATION-PRIMITIVE-DATA-TYPE UUID="26119f3d-03c9-427d-8f51-19c5bdcc733a">
+											<SHORT-NAME>SCI_Pfc_State_u8_T_adt</SHORT-NAME>
+											<CATEGORY>VALUE</CATEGORY>
+										</APPLICATION-PRIMITIVE-DATA-TYPE>
+										<APPLICATION-PRIMITIVE-DATA-TYPE UUID="b0d9c509-6620-4855-bd3a-33fa8b2ab880">
+											<SHORT-NAME>SCI_Pfc_Voltage_s32_adt</SHORT-NAME>
+											<CATEGORY>VALUE</CATEGORY>
+										</APPLICATION-PRIMITIVE-DATA-TYPE>
+									</ELEMENTS>
+								</AR-PACKAGE>
+								<AR-PACKAGE UUID="cabe4e8e-0519-47d7-ab97-14753bef35ef">
+									<SHORT-NAME>Callbacks</SHORT-NAME>
+								</AR-PACKAGE>
+								<AR-PACKAGE UUID="5d594e78-dafb-4122-a790-53fae5a41cd2">
+									<SHORT-NAME>Calls</SHORT-NAME>
+									<ELEMENTS>
+										<BSW-MODULE-ENTRY UUID="1265f943-74b1-4c58-bc7f-b9109a77706a">
+											<SHORT-NAME>Pfc_DeInit</SHORT-NAME>
+											<CATEGORY>REGULAR_CALL</CATEGORY>
+											<SERVICE-ID>2</SERVICE-ID>
+											<ROLE>Pfc_deinitialisation</ROLE>
+											<IS-REENTRANT>false</IS-REENTRANT>
+											<IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+											<CALL-TYPE>REGULAR</CALL-TYPE>
+											<EXECUTION-CONTEXT>HOOK</EXECUTION-CONTEXT>
+											<SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+										</BSW-MODULE-ENTRY>
+										<BSW-MODULE-ENTRY UUID="553f6f18-cccb-43e3-8339-5d5a40ef6591">
+											<SHORT-NAME>Pfc_Init</SHORT-NAME>
+											<CATEGORY>REGULAR_CALL</CATEGORY>
+											<SERVICE-ID>2</SERVICE-ID>
+											<ROLE>Pfc_initialisation</ROLE>
+											<IS-REENTRANT>false</IS-REENTRANT>
+											<IS-SYNCHRONOUS>false</IS-SYNCHRONOUS>
+											<CALL-TYPE>REGULAR</CALL-TYPE>
+											<EXECUTION-CONTEXT>HOOK</EXECUTION-CONTEXT>
+											<SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+										</BSW-MODULE-ENTRY>
+									</ELEMENTS>
+								</AR-PACKAGE>
+								<AR-PACKAGE UUID="5a104526-373d-4645-80f9-c9ecd193c4b9">
+									<SHORT-NAME>Consts</SHORT-NAME>
+									<ELEMENTS>
+										<CONSTANT-SPECIFICATION UUID="6a6a21a8-616a-4f99-9db5-17c170292bfa">
+											<SHORT-NAME>SCI_Pfc_Current_s32_adt_const</SHORT-NAME>
+											<VALUE-SPEC>
+												<APPLICATION-VALUE-SPECIFICATION>
+													<CATEGORY>VALUE</CATEGORY>
+													<SW-VALUE-CONT>
+														<SW-VALUES-PHYS>
+															<V>0</V>
+														</SW-VALUES-PHYS>
+													</SW-VALUE-CONT>
+												</APPLICATION-VALUE-SPECIFICATION>
+											</VALUE-SPEC>
+										</CONSTANT-SPECIFICATION>
+										<CONSTANT-SPECIFICATION UUID="4b75d6d6-80ef-4f4f-845f-7a5622a0660d">
+											<SHORT-NAME>SCI_Pfc_ErrorState_u32_T_adt_const</SHORT-NAME>
+											<VALUE-SPEC>
+												<APPLICATION-VALUE-SPECIFICATION>
+													<CATEGORY>VALUE</CATEGORY>
+													<SW-VALUE-CONT>
+														<SW-VALUES-PHYS>
+															<V>0</V>
+														</SW-VALUES-PHYS>
+													</SW-VALUE-CONT>
+												</APPLICATION-VALUE-SPECIFICATION>
+											</VALUE-SPEC>
+										</CONSTANT-SPECIFICATION>
+										<CONSTANT-SPECIFICATION UUID="d751433d-1062-4e75-b6dd-33bbe2d8dc14">
+											<SHORT-NAME>SCI_Pfc_OnOff_adt_const</SHORT-NAME>
+											<VALUE-SPEC>
+												<APPLICATION-VALUE-SPECIFICATION>
+													<CATEGORY>VALUE</CATEGORY>
+													<SW-VALUE-CONT>
+														<SW-VALUES-PHYS>
+															<V>0</V>
+														</SW-VALUES-PHYS>
+													</SW-VALUE-CONT>
+												</APPLICATION-VALUE-SPECIFICATION>
+											</VALUE-SPEC>
+										</CONSTANT-SPECIFICATION>
+										<CONSTANT-SPECIFICATION UUID="0d01df41-2099-4dae-9a22-35f6735e2860">
+											<SHORT-NAME>SCI_Pfc_Power_s32_adt_const</SHORT-NAME>
+											<VALUE-SPEC>
+												<APPLICATION-VALUE-SPECIFICATION>
+													<CATEGORY>VALUE</CATEGORY>
+													<SW-VALUE-CONT>
+														<SW-VALUES-PHYS>
+															<V>0</V>
+														</SW-VALUES-PHYS>
+													</SW-VALUE-CONT>
+												</APPLICATION-VALUE-SPECIFICATION>
+											</VALUE-SPEC>
+										</CONSTANT-SPECIFICATION>
+										<CONSTANT-SPECIFICATION UUID="1c261988-a60f-44e5-be75-ea1610ab4b3f">
+											<SHORT-NAME>SCI_Pfc_State_u8_T_adt_const</SHORT-NAME>
+											<VALUE-SPEC>
+												<APPLICATION-VALUE-SPECIFICATION>
+													<CATEGORY>VALUE</CATEGORY>
+													<SW-VALUE-CONT>
+														<SW-VALUES-PHYS>
+															<V>0</V>
+														</SW-VALUES-PHYS>
+													</SW-VALUE-CONT>
+												</APPLICATION-VALUE-SPECIFICATION>
+											</VALUE-SPEC>
+										</CONSTANT-SPECIFICATION>
+										<CONSTANT-SPECIFICATION UUID="644081d7-3e3d-441d-9fea-43c03457a168">
+											<SHORT-NAME>SCI_Pfc_Voltage_s32_adt_const</SHORT-NAME>
+											<VALUE-SPEC>
+												<APPLICATION-VALUE-SPECIFICATION>
+													<CATEGORY>VALUE</CATEGORY>
+													<SW-VALUE-CONT>
+														<SW-VALUES-PHYS>
+															<V>0</V>
+														</SW-VALUES-PHYS>
+													</SW-VALUE-CONT>
+												</APPLICATION-VALUE-SPECIFICATION>
+											</VALUE-SPEC>
+										</CONSTANT-SPECIFICATION>
+									</ELEMENTS>
+								</AR-PACKAGE>
+								<AR-PACKAGE UUID="7e27e5fd-aa20-4a8b-be72-29dbea7896f3">
+									<SHORT-NAME>DataTypeMappingSets</SHORT-NAME>
+									<ELEMENTS>
+										<DATA-TYPE-MAPPING-SET UUID="2da02648-8842-477f-b738-3d8ff534d592">
+											<SHORT-NAME>SCI_Pfc_DataMapping</SHORT-NAME>
+											<DATA-TYPE-MAPS>
+												<DATA-TYPE-MAP>
+													<APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Swcs/BT_Swcs/SCI_Pfc/ADTs/SCI_Pfc_State_u8_T_adt</APPLICATION-DATA-TYPE-REF>
+													<IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Swcs/BT_Swcs/IDTs/GenericByte</IMPLEMENTATION-DATA-TYPE-REF>
+												</DATA-TYPE-MAP>
+												<DATA-TYPE-MAP>
+													<APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Swcs/BT_Swcs/SCI_Pfc/ADTs/SCI_Pfc_ErrorState_u32_T_adt</APPLICATION-DATA-TYPE-REF>
+													<IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Swcs/BT_Swcs/IDTs/ErrorCode_u32</IMPLEMENTATION-DATA-TYPE-REF>
+												</DATA-TYPE-MAP>
+												<DATA-TYPE-MAP>
+													<APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Swcs/BT_Swcs/SCI_Pfc/ADTs/SCI_Pfc_OnOff_adt</APPLICATION-DATA-TYPE-REF>
+													<IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Swcs/BT_Swcs/IDTs/OnOff</IMPLEMENTATION-DATA-TYPE-REF>
+												</DATA-TYPE-MAP>
+												<DATA-TYPE-MAP>
+													<APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Swcs/BT_Swcs/SCI_Pfc/ADTs/SCI_Pfc_Voltage_s32_adt</APPLICATION-DATA-TYPE-REF>
+													<IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Swcs/BT_Swcs/IDTs/Voltage_s32</IMPLEMENTATION-DATA-TYPE-REF>
+												</DATA-TYPE-MAP>
+												<DATA-TYPE-MAP>
+													<APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Swcs/BT_Swcs/SCI_Pfc/ADTs/SCI_Pfc_Current_s32_adt</APPLICATION-DATA-TYPE-REF>
+													<IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Swcs/BT_Swcs/IDTs/Current_s32</IMPLEMENTATION-DATA-TYPE-REF>
+												</DATA-TYPE-MAP>
+												<DATA-TYPE-MAP>
+													<APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Swcs/BT_Swcs/SCI_Pfc/ADTs/SCI_Pfc_Power_s32_adt</APPLICATION-DATA-TYPE-REF>
+													<IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Swcs/BT_Swcs/IDTs/Power_s32</IMPLEMENTATION-DATA-TYPE-REF>
+												</DATA-TYPE-MAP>
+											</DATA-TYPE-MAPS>
+										</DATA-TYPE-MAPPING-SET>
+									</ELEMENTS>
+								</AR-PACKAGE>
+								<AR-PACKAGE UUID="14dba9bc-a646-4b6e-9605-0aab303560d5">
+									<SHORT-NAME>IFs</SHORT-NAME>
+									<ELEMENTS>
+										<CLIENT-SERVER-INTERFACE UUID="0007af64-8832-4157-b2f1-a4121f9ba083">
+											<SHORT-NAME>PFC_Cmd_if</SHORT-NAME>
+											<IS-SERVICE>true</IS-SERVICE>
+											<OPERATIONS>
+												<CLIENT-SERVER-OPERATION UUID="927c7821-998b-44d4-8c78-40aade52d129">
+													<SHORT-NAME>Turn</SHORT-NAME>
+													<DESC>
+														<L-2 L="FOR-ALL">aValue: 0 --&gt; Turning OFF
+aValue: 1 --&gt; Turning ON</L-2>
+													</DESC>
+													<ARGUMENTS>
+														<ARGUMENT-DATA-PROTOTYPE UUID="8300ca89-9efd-4d50-a22c-09f27f3092c3">
+															<SHORT-NAME>aValue</SHORT-NAME>
+															<SW-DATA-DEF-PROPS>
+																<SW-DATA-DEF-PROPS-VARIANTS>
+																	<SW-DATA-DEF-PROPS-CONDITIONAL>
+																		<SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+																	</SW-DATA-DEF-PROPS-CONDITIONAL>
+																</SW-DATA-DEF-PROPS-VARIANTS>
+															</SW-DATA-DEF-PROPS>
+															<TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Swcs/BT_Swcs/IDTs/OnOff</TYPE-TREF>
+															<DIRECTION>IN</DIRECTION>
+															<SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+														</ARGUMENT-DATA-PROTOTYPE>
+													</ARGUMENTS>
+													<POSSIBLE-ERROR-REFS>
+														<POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Swcs/BT_Swcs/SCI_Pfc/IFs/PFC_Cmd_if/E_BUSY</POSSIBLE-ERROR-REF>
+														<POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Swcs/BT_Swcs/SCI_Pfc/IFs/PFC_Cmd_if/E_ERROR</POSSIBLE-ERROR-REF>
+													</POSSIBLE-ERROR-REFS>
+												</CLIENT-SERVER-OPERATION>
+												<CLIENT-SERVER-OPERATION UUID="af8a552b-e0a3-4809-a567-361c22aee970">
+													<SHORT-NAME>SetVoltage</SHORT-NAME>
+													<DESC>
+														<L-2 L="FOR-ALL" />
+													</DESC>
+													<ARGUMENTS>
+														<ARGUMENT-DATA-PROTOTYPE UUID="dcfa215c-5112-4cbc-a93f-296d70c31c4e">
+															<SHORT-NAME>aValue</SHORT-NAME>
+															<SW-DATA-DEF-PROPS>
+																<SW-DATA-DEF-PROPS-VARIANTS>
+																	<SW-DATA-DEF-PROPS-CONDITIONAL>
+																		<SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+																	</SW-DATA-DEF-PROPS-CONDITIONAL>
+																</SW-DATA-DEF-PROPS-VARIANTS>
+															</SW-DATA-DEF-PROPS>
+															<TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Swcs/BT_Swcs/IDTs/Voltage_s32</TYPE-TREF>
+															<DIRECTION>IN</DIRECTION>
+															<SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+														</ARGUMENT-DATA-PROTOTYPE>
+													</ARGUMENTS>
+													<POSSIBLE-ERROR-REFS>
+														<POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Swcs/BT_Swcs/SCI_Pfc/IFs/PFC_Cmd_if/E_BUSY</POSSIBLE-ERROR-REF>
+														<POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Swcs/BT_Swcs/SCI_Pfc/IFs/PFC_Cmd_if/E_ERROR</POSSIBLE-ERROR-REF>
+													</POSSIBLE-ERROR-REFS>
+												</CLIENT-SERVER-OPERATION>
+												<CLIENT-SERVER-OPERATION UUID="97dbc9af-21cf-489d-af71-f629eaeb3763">
+													<SHORT-NAME>ClearFaults</SHORT-NAME>
+													<DESC>
+														<L-2 L="FOR-ALL">0xffffffff for clearing each and any fault</L-2>
+													</DESC>
+													<ARGUMENTS>
+														<ARGUMENT-DATA-PROTOTYPE UUID="554d1ecd-20ae-4f54-bd60-0795f215aa60">
+															<SHORT-NAME>aMask</SHORT-NAME>
+															<SW-DATA-DEF-PROPS>
+																<SW-DATA-DEF-PROPS-VARIANTS>
+																	<SW-DATA-DEF-PROPS-CONDITIONAL>
+																		<SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+																	</SW-DATA-DEF-PROPS-CONDITIONAL>
+																</SW-DATA-DEF-PROPS-VARIANTS>
+															</SW-DATA-DEF-PROPS>
+															<TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Swcs/BT_Swcs/IDTs/ErrorCode_u32</TYPE-TREF>
+															<DIRECTION>IN</DIRECTION>
+															<SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+														</ARGUMENT-DATA-PROTOTYPE>
+													</ARGUMENTS>
+													<POSSIBLE-ERROR-REFS>
+														<POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Swcs/BT_Swcs/SCI_Pfc/IFs/PFC_Cmd_if/E_BUSY</POSSIBLE-ERROR-REF>
+														<POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/Swcs/BT_Swcs/SCI_Pfc/IFs/PFC_Cmd_if/E_ERROR</POSSIBLE-ERROR-REF>
+													</POSSIBLE-ERROR-REFS>
+												</CLIENT-SERVER-OPERATION>
+											</OPERATIONS>
+											<POSSIBLE-ERRORS>
+												<APPLICATION-ERROR UUID="4c276ff8-814d-4121-9e6a-9179cbf5aa1c">
+													<SHORT-NAME>E_ERROR</SHORT-NAME>
+													<ERROR-CODE>1</ERROR-CODE>
+												</APPLICATION-ERROR>
+												<APPLICATION-ERROR UUID="feb8d147-34a8-40d0-8e7a-1cdfb66aead8">
+													<SHORT-NAME>E_BUSY</SHORT-NAME>
+													<ERROR-CODE>2</ERROR-CODE>
+												</APPLICATION-ERROR>
+											</POSSIBLE-ERRORS>
+										</CLIENT-SERVER-INTERFACE>
+										<SENDER-RECEIVER-INTERFACE UUID="2704471c-5555-49b3-bade-2a721a2f47d0">
+											<SHORT-NAME>SCI_Pfc_Current_s32_if</SHORT-NAME>
+											<IS-SERVICE>false</IS-SERVICE>
+											<DATA-ELEMENTS>
+												<VARIABLE-DATA-PROTOTYPE UUID="0a1ec32f-1efc-4947-a1a0-53f691ed6a5c">
+													<SHORT-NAME>SCI_Pfc_Current_s32Value</SHORT-NAME>
+													<SW-DATA-DEF-PROPS>
+														<SW-DATA-DEF-PROPS-VARIANTS>
+															<SW-DATA-DEF-PROPS-CONDITIONAL>
+																<SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+															</SW-DATA-DEF-PROPS-CONDITIONAL>
+														</SW-DATA-DEF-PROPS-VARIANTS>
+													</SW-DATA-DEF-PROPS>
+													<TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Swcs/BT_Swcs/IDTs/Current_s32</TYPE-TREF>
+												</VARIABLE-DATA-PROTOTYPE>
+											</DATA-ELEMENTS>
+										</SENDER-RECEIVER-INTERFACE>
+										<SENDER-RECEIVER-INTERFACE UUID="0993e227-7bd3-408d-a294-0f50b8f22f67">
+											<SHORT-NAME>SCI_Pfc_ErrorState_u32_T_if</SHORT-NAME>
+											<IS-SERVICE>false</IS-SERVICE>
+											<DATA-ELEMENTS>
+												<VARIABLE-DATA-PROTOTYPE UUID="6273479b-483c-4620-8bd1-9c1c89d865ce">
+													<SHORT-NAME>SCI_Pfc_ErrorState_u32_TValue</SHORT-NAME>
+													<SW-DATA-DEF-PROPS>
+														<SW-DATA-DEF-PROPS-VARIANTS>
+															<SW-DATA-DEF-PROPS-CONDITIONAL>
+																<SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+															</SW-DATA-DEF-PROPS-CONDITIONAL>
+														</SW-DATA-DEF-PROPS-VARIANTS>
+													</SW-DATA-DEF-PROPS>
+													<TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Swcs/BT_Swcs/IDTs/ErrorCode_u32</TYPE-TREF>
+												</VARIABLE-DATA-PROTOTYPE>
+											</DATA-ELEMENTS>
+										</SENDER-RECEIVER-INTERFACE>
+										<SENDER-RECEIVER-INTERFACE UUID="8ebaa956-b750-40f0-b238-f59d86638c55">
+											<SHORT-NAME>SCI_Pfc_Power_s32_if</SHORT-NAME>
+											<IS-SERVICE>false</IS-SERVICE>
+											<DATA-ELEMENTS>
+												<VARIABLE-DATA-PROTOTYPE UUID="5bc43393-ce69-42f6-99e1-db055ab604bc">
+													<SHORT-NAME>SCI_Pfc_Power_s32Value</SHORT-NAME>
+													<SW-DATA-DEF-PROPS>
+														<SW-DATA-DEF-PROPS-VARIANTS>
+															<SW-DATA-DEF-PROPS-CONDITIONAL>
+																<SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+															</SW-DATA-DEF-PROPS-CONDITIONAL>
+														</SW-DATA-DEF-PROPS-VARIANTS>
+													</SW-DATA-DEF-PROPS>
+													<TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Swcs/BT_Swcs/IDTs/Power_s32</TYPE-TREF>
+												</VARIABLE-DATA-PROTOTYPE>
+											</DATA-ELEMENTS>
+										</SENDER-RECEIVER-INTERFACE>
+										<SENDER-RECEIVER-INTERFACE UUID="221e64d3-48cf-4275-b9b6-700a510457ec">
+											<SHORT-NAME>SCI_Pfc_State_u8_T_if</SHORT-NAME>
+											<IS-SERVICE>false</IS-SERVICE>
+											<DATA-ELEMENTS>
+												<VARIABLE-DATA-PROTOTYPE UUID="89dae6e2-d37a-45ff-a698-7352519250a8">
+													<SHORT-NAME>SCI_Pfc_State_u8_TValue</SHORT-NAME>
+													<SW-DATA-DEF-PROPS>
+														<SW-DATA-DEF-PROPS-VARIANTS>
+															<SW-DATA-DEF-PROPS-CONDITIONAL>
+																<SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+															</SW-DATA-DEF-PROPS-CONDITIONAL>
+														</SW-DATA-DEF-PROPS-VARIANTS>
+													</SW-DATA-DEF-PROPS>
+													<TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Swcs/BT_Swcs/IDTs/GenericByte</TYPE-TREF>
+												</VARIABLE-DATA-PROTOTYPE>
+											</DATA-ELEMENTS>
+										</SENDER-RECEIVER-INTERFACE>
+										<SENDER-RECEIVER-INTERFACE UUID="319f43f6-e06d-43da-b93b-67521014dd03">
+											<SHORT-NAME>SCI_Pfc_Voltage_s32_if</SHORT-NAME>
+											<IS-SERVICE>false</IS-SERVICE>
+											<DATA-ELEMENTS>
+												<VARIABLE-DATA-PROTOTYPE UUID="a1e7b0a5-26a9-4b05-abab-c33be9cc075f">
+													<SHORT-NAME>SCI_Pfc_Voltage_s32Value</SHORT-NAME>
+													<SW-DATA-DEF-PROPS>
+														<SW-DATA-DEF-PROPS-VARIANTS>
+															<SW-DATA-DEF-PROPS-CONDITIONAL>
+																<SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+															</SW-DATA-DEF-PROPS-CONDITIONAL>
+														</SW-DATA-DEF-PROPS-VARIANTS>
+													</SW-DATA-DEF-PROPS>
+													<TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Swcs/BT_Swcs/IDTs/Voltage_s32</TYPE-TREF>
+												</VARIABLE-DATA-PROTOTYPE>
+											</DATA-ELEMENTS>
+										</SENDER-RECEIVER-INTERFACE>
+									</ELEMENTS>
+								</AR-PACKAGE>
+								<AR-PACKAGE UUID="844ff9e3-de5d-42ca-aed1-ee404693c2ff">
+									<SHORT-NAME>Interrupts</SHORT-NAME>
+								</AR-PACKAGE>
+								<AR-PACKAGE UUID="707ed829-363c-4ff9-9d3f-fb1fd16f10ed">
+									<SHORT-NAME>ModeDeclarationGroups</SHORT-NAME>
+								</AR-PACKAGE>
+								<AR-PACKAGE UUID="b7994289-83d1-4b70-9b9f-7aaff9daa24b">
+									<SHORT-NAME>Runnables</SHORT-NAME>
+									<ELEMENTS>
+										<BSW-MODULE-ENTRY UUID="f0e703d3-b39b-49fc-bd43-d79fac5e03b3">
+											<SHORT-NAME>pfc_BswMainFunction</SHORT-NAME>
+											<CATEGORY>RUNNABLE</CATEGORY>
+											<SERVICE-ID>1</SERVICE-ID>
+											<ROLE>pfc_BswMainFunction</ROLE>
+											<IS-REENTRANT>false</IS-REENTRANT>
+											<IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+											<CALL-TYPE>SCHEDULED</CALL-TYPE>
+											<EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+											<SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+										</BSW-MODULE-ENTRY>
+									</ELEMENTS>
+								</AR-PACKAGE>
+							</AR-PACKAGES>
+						</AR-PACKAGE>
+					</AR-PACKAGES>
+				</AR-PACKAGE>
+			</AR-PACKAGES>
+		</AR-PACKAGE>
+	</AR-PACKAGES>
+</AUTOSAR>

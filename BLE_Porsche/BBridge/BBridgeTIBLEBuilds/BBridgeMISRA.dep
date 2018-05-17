@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1099150085</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\BBridgeModules\src\typedefs.h</file>
+      <file>$PROJ_DIR$\..\BBridgeModules\src\BBridgeApp.c</file>
+      <file>$PROJ_DIR$\..\BBridgeModules\src\BBridgeApp.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\BBridgeApp.pbi</file>
+      <file>$PROJ_DIR$\..\BBridgeModules\src\BBridgeCommons.c</file>
+      <file>$PROJ_DIR$\..\BBridgeModules\src\BBridgeCommons.h</file>
+      <file>$PROJ_DIR$\..\BBridgeModules\src\BBridgeDefs.h</file>
+      <file>$PROJ_DIR$\..\BBridgeModules\src\ConnectableMode.c</file>
+      <file>$PROJ_DIR$\..\BBridgeModules\src\ConnectableMode.h</file>
+      <file>$PROJ_DIR$\..\BBridgeModules\src\DataHandler.c</file>
+      <file>$PROJ_DIR$\..\BBridgeModules\src\DataHandler.h</file>
+      <file>$PROJ_DIR$\..\BBridgeModules\src\FifoBuffer.c</file>
+      <file>$PROJ_DIR$\..\BBridgeModules\src\FifoBuffer.h</file>
+      <file>$PROJ_DIR$\..\BBridgeModules\src\IdleMode.c</file>
+      <file>$PROJ_DIR$\..\BBridgeModules\src\IdleMode.h</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\..\BBridgeModules\src\ScannerMode.c</file>
+      <file>$PROJ_DIR$\..\BBridgeModules\src\ScannerMode.h</file>
+      <file>$PROJ_DIR$\..\BBridgeModules\src\SPITransportLayer.c</file>
+      <file>$PROJ_DIR$\..\BBridgeModules\src\SPITransportLayer.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\ScannerMode.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\DataHandler.pbi</file>
+      <file>$PROJ_DIR$\Debug\Exe\BBridgeMISRA.d51</file>
+      <file>$PROJ_DIR$\Debug\Obj\FifoBuffer.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\clib\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\clib\stdarg.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\IdleMode.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\DataHandler.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\ConnectableMode.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\BBridgeCommons.r51</file>
+      <file>$TOOLKIT_DIR$\inc\clib\stdlib.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\BBridgeCommons.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\clib\string.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\SPITransportLayer.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\BBridgeModules\src\BBridgeApp.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 2 0 6 10 31 21 33 14 8 17 19</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19 0 14 31 17 10 33 8 21 6 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\BBridgeModules\src\BBridgeCommons.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 30</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 5 6 0</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 0 6 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\BBridgeModules\src\ConnectableMode.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 8 6 0 5 31 21 33</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33 0 21 5 6 31 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\BBridgeModules\src\DataHandler.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 25 26 21 5 6 0 10 12 31 33</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21 26 0 10 25 5 12 33 6 31</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\BBridgeModules\src\FifoBuffer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 12 0 25 26 21 31 33</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 0 33 21 12 31 26</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\BBridgeModules\src\IdleMode.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 33 21 31 14 6 0 5</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14 6 31 5 21 0 33</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 36</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\BBridgeModules\src\ScannerMode.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 17 6 0 5 33 21 31</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6 33 5 31 21 17 0</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\BBridgeModules\src\SPITransportLayer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 19 0 33 21</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 0 21 33 19</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

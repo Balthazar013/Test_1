@@ -1,0 +1,4 @@
+<map id="BBridge_OnBTDisconnection" name="BBridge_OnBTDisconnection">
+<area shape="rect" id="node2" href="$d1/dec/group___connectable_mode.html#ga1255a4548dcaea9360b6bc1351053bfd" title="Called when there is a disconnection event from the bluetooth HW. (connection lost included) ..." alt="" coords="245,5,477,32"/>
+<area shape="rect" id="node3" href="$d1/dc9/group___scanner_mode.html#ga16966282756eaeec9fca655cf8ef9a31" title="Called when there is a disconnection event (connection lost included) " alt="" coords="257,56,465,83"/>
+</map>

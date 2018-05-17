@@ -1,0 +1,19 @@
+<map id="src/typedefs.h" name="src/typedefs.h">
+<area shape="rect" id="node2" href="$d8/dd1/_b_bridge_app_8h.html" title="... " alt="" coords="734,155,857,181"/>
+<area shape="rect" id="node4" href="$df/d54/_b_bridge_defs_8h.html" title="Definitions and parameters to be used across the BBridge application. " alt="" coords="343,80,469,107"/>
+<area shape="rect" id="node12" href="$d2/d60/_b_bridge_commons_8c.html" title="Shared functions and definitions to be used across the BBridge application. " alt="" coords="747,229,907,256"/>
+<area shape="rect" id="node14" href="$d8/de5/_data_handler_8h.html" title="It handles the business logics for the commands, events and responses between the BBridge and the Pan..." alt="" coords="833,80,959,107"/>
+<area shape="rect" id="node15" href="$de/dfc/_s_p_i_transport_layer_8h.html" title="Upper layer implementation of the SPI communication. It ensures that the communication over SPI is re..." alt="" coords="984,80,1147,107"/>
+<area shape="rect" id="node16" href="$d6/dfa/_s_p_i_transport_layer_8c.html" title="Implementation of a specialized SPI Transport driver for emulating an UART API. " alt="" coords="1035,155,1197,181"/>
+<area shape="rect" id="node17" href="$d9/d55/_fifo_buffer_8h.html" title="This is a universal FIFO&#45;Buffer implementation for embedded systems. " alt="" coords="1272,80,1381,107"/>
+<area shape="rect" id="node18" href="$dc/daa/_fifo_buffer_8c.html" title="This is a universal FIFO&#45;Buffer implementation for embedded systems. " alt="" coords="1353,155,1463,181"/>
+<area shape="rect" id="node3" href="$db/d67/_b_bridge_app_8c_source.html" title="src/BBridgeApp.c" alt="" coords="595,229,719,256"/>
+<area shape="rect" id="node5" href="$d9/dd3/_idle_mode_8h.html" title="It implements the business logics for the IDLE mode of the BBridge application. " alt="" coords="603,155,709,181"/>
+<area shape="rect" id="node7" href="$d5/dab/_connectable_mode_8h.html" title="... " alt="" coords="235,155,393,181"/>
+<area shape="rect" id="node8" href="$db/d99/_connectable_mode_8c.html" title="... " alt="" coords="235,229,393,256"/>
+<area shape="rect" id="node9" href="$d1/d9d/_scanner_mode_8h.html" title="... " alt="" coords="25,155,159,181"/>
+<area shape="rect" id="node10" href="$dd/d25/_scanner_mode_8c.html" title="... " alt="" coords="25,229,159,256"/>
+<area shape="rect" id="node11" href="$db/d5c/_b_bridge_commons_8h.html" title="Holds functions and definitions used across the project scope. " alt="" coords="419,155,579,181"/>
+<area shape="rect" id="node6" href="$d6/d18/_idle_mode_8c.html" title="It implements the business logics for the IDLE mode of the BBridge application. " alt="" coords="455,229,561,256"/>
+<area shape="rect" id="node13" href="$dc/d80/_data_handler_8c.html" title="... " alt="" coords="934,229,1060,256"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="ConnectableMode_OnConnection" name="ConnectableMode_OnConnection">
+<area shape="rect" id="node2" href="$df/d72/group___b_bridge_app.html#gab8d25e26773c84b39618287895084155" title="Callback called when a new Bluetooth connection is established. It processes the callback event and d..." alt="" coords="269,5,443,32"/>
+<area shape="rect" id="node3" href="$df/d72/group___b_bridge_app.html#ga7780a972e438854e25df82870b98403b" title="It initializes the BBridge module. " alt="" coords="491,5,583,32"/>
+</map>

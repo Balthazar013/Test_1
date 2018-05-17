@@ -1,0 +1,4 @@
+<map id="FifoBufferPush" name="FifoBufferPush">
+<area shape="rect" id="node2" href="$d0/de1/group___data_handler.html#gac39cd651d1160312b644fbeded876155" title="It pushes external data to be sent to the Panther device. " alt="" coords="161,5,351,46"/>
+<area shape="rect" id="node3" href="$df/d72/group___b_bridge_app.html#ga728af6136941699f4e349141d37be1ce" title="It receives data coming from the BLE stack and processes it internally in the BBridge application mod..." alt="" coords="401,12,551,39"/>
+</map>

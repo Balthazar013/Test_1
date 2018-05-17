@@ -1,0 +1,5 @@
+<map id="BBridge_OnBTConnection" name="BBridge_OnBTConnection">
+<area shape="rect" id="node2" href="$d1/dc9/group___scanner_mode.html#gace3404c54de9456a1a05a73680f89c87" title="Called when there is a new connection event from the Bluetooth stack. " alt="" coords="239,5,430,32"/>
+<area shape="rect" id="node3" href="$d1/dec/group___connectable_mode.html#ga612b23af48ea5003e4090345726aa9f1" title="Callback called when a new Bluetooth connection (not yet validated) has been established. " alt="" coords="227,56,442,83"/>
+<area shape="rect" id="node4" href="$df/d72/group___b_bridge_app.html#ga2d6dbdfc9addb0d48d5ef092eeee0840" title="It calls the terminate connection function in the HW module. " alt="" coords="245,107,424,133"/>
+</map>

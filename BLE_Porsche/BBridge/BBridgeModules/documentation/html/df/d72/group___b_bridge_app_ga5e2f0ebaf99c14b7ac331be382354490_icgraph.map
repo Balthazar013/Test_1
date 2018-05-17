@@ -1,0 +1,5 @@
+<map id="BBridge_GetCMDType" name="BBridge_GetCMDType">
+<area shape="rect" id="node2" href="$df/d72/group___b_bridge_app.html#ga7780a972e438854e25df82870b98403b" title="It initializes the BBridge module. " alt="" coords="427,24,519,51"/>
+<area shape="rect" id="node3" href="$df/d72/group___b_bridge_app.html#gaafe15099284fc46419b9184095f615b8" title="It sets a configuration value in the module&#39;s configuration table. If necessary it calls hardware&#45;dep..." alt="" coords="208,24,379,51"/>
+<area shape="rect" id="node4" href="$df/d72/group___b_bridge_app.html#ga17cf9b305474474aa98e5bf0ee013b58" title="It loads a BBridge configuration value. " alt="" coords="208,75,379,102"/>
+</map>

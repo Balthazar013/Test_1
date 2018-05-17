@@ -1,0 +1,4 @@
+<map id="ConnectableMode_ReadyToExit" name="ConnectableMode_ReadyToExit">
+<area shape="rect" id="node2" href="$df/d72/group___b_bridge_app.html#ga8e64507fbe4e57d86d3c702dcd7117be" title="It handles the overall business logics for the BBridge application. On the first time, after initialization is completed, an event &quot;init ok&quot; is sent to the Panther. . " alt="" coords="499,5,605,32"/>
+<area shape="rect" id="node3" href="$d1/dec/group___connectable_mode.html#ga485ffa23cad46bcca9374b24d96f285e" title="To be called by the caller module when the Connectable state machine will not be executed anymore..." alt="" coords="262,31,450,57"/>
+</map>

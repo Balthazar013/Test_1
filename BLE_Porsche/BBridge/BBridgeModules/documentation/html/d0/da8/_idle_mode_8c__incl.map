@@ -1,0 +1,6 @@
+<map id="src/IdleMode.c" name="src/IdleMode.c">
+<area shape="rect" id="node4" href="$d9/dd3/_idle_mode_8h.html" title="It implements the business logics for the IDLE mode of the BBridge application. " alt="" coords="183,80,268,107"/>
+<area shape="rect" id="node7" href="$db/d5c/_b_bridge_commons_8h.html" title="Holds functions and definitions used across the project scope. " alt="" coords="292,80,431,107"/>
+<area shape="rect" id="node5" href="$df/d54/_b_bridge_defs_8h.html" title="Definitions and parameters to be used across the BBridge application. " alt="" coords="241,155,345,181"/>
+<area shape="rect" id="node6" href="$d7/d69/typedefs_8h.html" title="makes it possible to use standard &quot;stdint&quot; type definitions " alt="" coords="252,229,335,256"/>
+</map>
