@@ -1,0 +1,51 @@
+
+
+#include <Std_Types.h>
+
+#define HDR_SW_VERSION_SIZE                 7
+#define HDR_SUPP_VERSION_SIZE               11
+#define HDR_TIMESTAMP_SIZE                  26
+
+#pragma pack(1)
+typedef const struct{ 
+    uint32 HeaderSize;
+    uint32 BlockID;
+    uint8 SwVersion[HDR_SW_VERSION_SIZE];
+    uint8 SwSuppVersion[HDR_SUPP_VERSION_SIZE];
+    uint8 BuildTimeStamp[HDR_TIMESTAMP_SIZE];
+    uint8 CalibrationTimeStamp[HDR_TIMESTAMP_SIZE];
+    uint32 CRC32;
+} Block_Header;
+#pragma pack()
+
+
+
+#pragma ghs section rodata=".app_hdr"
+Block_Header csAppHdr =
+{
+    0x52,
+    0xBA000021,
+    "[X430]",
+    "[X430-008]",
+    "[2018-05-02 10:00:36.732]",
+    "[yyyy-MM-dd HH:mm:ss.fff]",
+    0xCF6BCE20
+
+};
+#pragma ghs section rodata=default
+
+
+#pragma ghs section rodata=".refpage_hdr"
+Block_Header csRefPageHdr =
+{
+    0x52,
+    0xBC000023,
+    "[X430]",
+    "[X430-008]",
+    "[2018-05-02 10:00:36.732]",
+    "[yyyy-MM-dd HH:mm:ss.fff]",
+    0x9E5A38A8
+
+};
+#pragma ghs section rodata=default
+

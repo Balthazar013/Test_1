@@ -1,0 +1,23 @@
+/* board-ghs.ldscript
+ *
+ * Partial linker script to define board memory layout.
+ *
+ * $Id: board-ghs.ldscript 17602 2014-02-03 12:09:35Z tojo2507 $
+ *
+ * Copyright 1998-2014 Elektrobit Automotive GmbH
+ * All rights exclusively reserved for Elektrobit Automotive GmbH,
+ * unless expressly agreed to otherwise.
+*/
+
+MEMORY
+{
+        reset   : org = 0x01000000, len = 0x001000
+        exctab  : org = 0x01002000, len = 0x001000
+        intctab : org = 0x01003000, len = 0x001000
+        mtext   : org = 0x01004000, len = 0x1FC000 /*   2 MB Flash */
+        mdata   : org = 0x40000000, len = 0x060000 /* 384 KB SRAM */
+}
+
+/* Editor settings: DO NOT DELETE
+ * vi:set ts=4:
+*/

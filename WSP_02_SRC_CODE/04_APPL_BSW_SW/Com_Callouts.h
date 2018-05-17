@@ -1,0 +1,11 @@
+#ifndef _COM_CALLOUT_H
+#define _COM_CALLOUT_H
+
+void Appl_COMCbkTOut_Com_COM_I_DC_ACT_ORU__DEV_AWC_Resp_62__MLBevo_HCAN(void);
+void Appl_COMCbkTOut_Com_COM_I_DC_REQ_ORU__DEV_AWC_Resp_62__MLBevo_HCAN(void);
+void Appl_COMCbkTOut_Com_COM_U_AC_ACT_ORU__DEV_AWC_Resp_62__MLBevo_HCAN(void);
+void Appl_COMCbkTOut_Com_COM_U_DC_ACT_ORU__DEV_AWC_Resp_62__MLBevo_HCAN(void);
+void Appl_COMCbkTOut_Com_COM_U_DC_MAX_ORU__DEV_AWC_Resp_62__MLBevo_HCAN(void);
+void Appl_COMCbkTOut_Com_CmdWSDStateMachine__DEV_AWC_Resp_50__MLBevo_HCAN(void);
+
+#endif /* _COM_CALLOUT_H */
