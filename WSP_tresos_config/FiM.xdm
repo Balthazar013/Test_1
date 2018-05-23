@@ -1,0 +1,1652 @@
+<?xml version='1.0'?>
+<datamodel version="3.0" 
+           xmlns="http://www.tresos.de/_projects/DataModel2/08/root.xsd" 
+           xmlns:a="http://www.tresos.de/_projects/DataModel2/08/attribute.xsd" 
+           xmlns:v="http://www.tresos.de/_projects/DataModel2/06/schema.xsd" 
+           xmlns:d="http://www.tresos.de/_projects/DataModel2/06/data.xsd">
+
+  <d:ctr type="AUTOSAR" factory="autosar" 
+         xmlns:ad="http://www.tresos.de/_projects/DataModel2/08/admindata.xsd" 
+         xmlns:icc="http://www.tresos.de/_projects/DataModel2/08/implconfigclass.xsd" 
+         xmlns:mt="http://www.tresos.de/_projects/DataModel2/11/multitest.xsd" >
+    <d:lst type="TOP-LEVEL-PACKAGES">
+      <d:ctr name="FiM" type="AR-PACKAGE">
+        <d:lst type="ELEMENTS">
+          <d:chc name="FiM" type="AR-ELEMENT" value="MODULE-CONFIGURATION">
+            <d:ctr type="MODULE-CONFIGURATION">
+              <a:a name="DEF" value="ASPath:/TS_TxDxM2I1R0/FiM"/>
+              <d:ctr name="CommonPublishedInformation" type="IDENTIFIABLE">
+                <d:var name="ArMajorVersion" type="INTEGER" value="2"/>
+                <d:var name="ArMinorVersion" type="INTEGER" value="2"/>
+                <d:var name="ArPatchVersion" type="INTEGER" value="0"/>
+                <d:var name="SwMajorVersion" type="INTEGER" value="2"/>
+                <d:var name="SwMinorVersion" type="INTEGER" value="1"/>
+                <d:var name="SwPatchVersion" type="INTEGER" value="7"/>
+                <d:var name="ModuleId" type="INTEGER" value="11">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorId" type="INTEGER" value="1">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorApiInfix" type="STRING" value="">
+                  <a:a name="ENABLE" value="false"/>
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="Release" type="STRING" value="">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+              </d:ctr>
+              <d:var name="IMPLEMENTATION_CONFIG_VARIANT" type="ENUMERATION" 
+                     value="VariantPreCompile">
+                <a:a name="IMPORTER_INFO" value="@DEF"/>
+              </d:var>
+              <d:lst name="FiMConfigSet" type="MAP">
+                <d:ctr name="FiM_Config_0" type="IDENTIFIABLE">
+                  <d:lst name="FiMEventSummary" type="MAP">
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_SWITCH_CURR_1_TOO_HIGH" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/SWITCH_CURR_1_TOO_HIGH"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_BOOST_VOLTAGE_IS_TOO_LOW" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/BOOST_VOLTAGE_IS_TOO_LOW"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_BOOST_VOLTAGE_IS_TOO_HIGH" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/BOOST_VOLTAGE_IS_TOO_HIGH"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_GRID_INPUT_VOLTAGE_LOW" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/GRID_INPUT_VOLTAGE_LOW"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_GRID_INPUT_VOLTAGE_HIGH" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/GRID_INPUT_VOLTAGE_HIGH"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_GRID_INPUT_CURRENT_HIGH" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/GRID_INPUT_CURRENT_HIGH"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_WPC_INPUT_POWER_HIGH" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/WPC_INPUT_POWER_HIGH"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_TempDly_FOD_UNDERTEMPERATURE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/FOD_UNDERTEMPERATURE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_TempDly"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_TempDly_FOD_OVERTEMPERATURE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/FOD_OVERTEMPERATURE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_TempDly"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_TempDly_BOOST_TEMP_HIGH" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/BOOST_TEMP_HIGH"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_TempDly"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_TempDly_BOOST_TEMP_LOW" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/BOOST_TEMP_LOW"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_TempDly"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_TempDly_B6_TEMP_HIGH" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/B6_TEMP_HIGH"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_TempDly"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_TempDly_B6_TEMP_LOW" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/B6_TEMP_LOW"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_TempDly"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_TempDly_ZMOVER_MOTOR_OVERHEAT" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ZMOVER_MOTOR_OVERHEAT"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_TempDly"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_ZmErr_ZMOVER_WAS_LOWERED_WITH_ACTIVE_FORCE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/Z_MOVER_WAS_LOWERED_WITH_ACTIVE_FORCE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_ZmErr"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_ZmErr_ZMOVER_CURRENT_HIGH" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ZMOVER_CURRENT_HIGH"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_ZmErr"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_ZmErr_ZMOVER_CURRENT_OFFSET" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ZMOVER_CURRENT_OFFSET"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_ZmErr"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_ZmErr_ZMOVER_SWITCH_MIN_POSITION_SENSOR_DEFECT" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ZMOVER_SWITCH_MIN_POSITION_SENSOR_DEFECT"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_ZmErr"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_ZmErr_ZMOVER_HALL_MIN_POSITION_SENSOR_DEFECT" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ZMOVER_HALL_MIN_POSITION_SENSOR_DEFECT"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_ZmErr"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_ZmErr_ZMOVER_HALL_SENSOR_DEFECT" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ZMOVER_HALL_SENSOR_DEFECT"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_ZmErr"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_ZmErr_ZMOVER_ACTUATOR_DEFECT" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ZMOVER_ACTUATOR_DEFECT"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_ZmErr"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_ZmErr_ZMOVER_MOTOR_NEGATIV_OVERLOAD" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ZMOVER_MOTOR_NEGATIV_OVERLOAD"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_ZmErr"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_ZmErr_ZMOVER_MOTOR_POSITIV_OVERLOAD" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ZMOVER_MOTOR_POSITIV_OVERLOAD"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_ZmErr"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_ZmErr_ZMOVER_MOTOR_OVERHEAT" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ZMOVER_MOTOR_OVERHEAT"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_ZmErr"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_CouplErr_MAGN_COUPL_TOO_LOW" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MAGN_COUPL_TOO_LOW"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_CouplErr"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_CouplErr_MAGN_COUPL_TOO_HIGH" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MAGN_COUPL_TOO_HIGH"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_CouplErr"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MCU_E_SSCM_CER_FAILURE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCU_E_SSCM_CER_FAILURE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MCU_E_TIMEOUT_FAILURE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCU_E_TIMEOUT_FAILURE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MCU_E_DEFAULTCASE_FAILURE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCU_E_DEFAULTCASE_FAILURE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MCU_E_FORBIDDEN_INVOCATION" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCU_E_FORBIDDEN_INVOCATION"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MCU_E_INVALID_PARAMETER" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCU_E_INVALID_PARAMETER"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MCU_E_CLOCK_FAILURE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCU_E_CLOCK_FAILURE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MCU_E_QUARTZ_FAILURE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCU_E_QUARTZ_FAILURE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MCU_E_PLLLOCK_FAILURE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCU_E_PLLLOCK_FAILURE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MCU_E_FUNCRESET_FAILURE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCU_E_FUNCRESET_FAILURE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MCU_E_DESTRESET_FAILURE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCU_E_DESTRESET_FAILURE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MCU_E_SAFEMODE_FAILURE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCU_E_SAFEMODE_FAILURE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_MCU_E_INVALIDMODE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCU_E_INVALIDMODE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MCU_E_INVALIDMODE_CONFIG" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCU_E_INVALIDMODE_CONFIG"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MCU_E_VOLTAGE_ERROR" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCU_E_VOLTAGE_ERROR"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MCU_E_TEMPERATURE_ERROR" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCU_E_TEMPERATURE_ERROR"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_MCU_E_CER_FAILURE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCU_E_CER_FAILURE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_FAULT_VBAT_MONITOR" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/FAULT_VBAT_MONITOR"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_FAULT_CAN_ENABLE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/FAULT_CAN_ENABLE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_FAULT_MAIN_ADC_INTEGRITY" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/FAULT_MAIN_ADC_INTEGRITY"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_GPT_E_FORBIDDEN_INVOCATION" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/GPT_E_FORBIDDEN_INVOCATION"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MCL_DMA_E_DESCRIPTOR" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCL_DMA_E_DESCRIPTOR"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_MCL_DMA_E_ECC" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCL_DMA_E_ECC"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_MCL_DMA_E_BUS" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCL_DMA_E_BUS"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MCL_DMA_E_PRIORITY" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCL_DMA_E_PRIORITY"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MCL_DMA_E_INCONSISTENCY" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCL_DMA_E_INCONSISTENCY"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MCL_DMA_E_UNRECOGNIZED" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MCL_DMA_E_UNRECOGNIZED"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_ADC_E_TIMEOUT" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ADC_E_TIMEOUT"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_SPI_E_HARDWARE_ERROR" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/SPI_E_HARDWARE_ERROR"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_FLS_E_COMPARE_FAILED" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/FLS_E_COMPARE_FAILED"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_FLS_E_ERASE_FAILED" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/FLS_E_ERASE_FAILED"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_FLS_E_READ_FAILED" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/FLS_E_READ_FAILED"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_FLS_E_UNEXPECTED_FLASH_ID" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/FLS_E_UNEXPECTED_FLASH_ID"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_FLS_E_WRITE_FAILED" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/FLS_E_WRITE_FAILED"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_ECUM_E_RAM_CHECK_FAILED" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ECUM_E_RAM_CHECK_FAILED"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_ECUM_E_ALL_RUN_REQUESTS_KILLED" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ECUM_E_ALL_RUN_REQUESTS_KILLED"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_POS_FAR_MEASURE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/POS_FAR_MEASURE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_POS_MEASUREMENT_ERROR_ANTENNA_2" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/POS_MEASUREMENT_ERROR_ANTENNA_2"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_POS_MEASUREMENT_ERROR_ANTENNA_3" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/POS_MEASUREMENT_ERROR_ANTENNA_3"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_POS_MEASUREMENT_ERROR_ANTENNA_4" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/POS_MEASUREMENT_ERROR_ANTENNA_4"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_POS_NEAR_MEASURE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/POS_NEAR_MEASURE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_FOD_CAN_NO_COMMUNICATION" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/FOD_CAN_NO_COMMUNICATION"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_ROM_TEST_FAILED" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ROM_TEST_FAILED"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_RAM_TEST_FAILED" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/RAM_TEST_FAILED"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_EEPROM_TEST_FAILED" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/EEPROM_TEST_FAILED"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_NVM_ERROR" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/NVM_ERROR"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_CAN_RAM_TEST_FAILED" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/CAN_RAM_TEST_FAILED"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_SBC_SPI_COMMUNICATION_TIMEOUT" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/SBC_SPI_COMMUNICATION_TIMEOUT"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_FAULT_BATTERY_VOLTAGE_UPPER" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/FAULT_BATTERY_VOLTAGE_UPPER"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_FAULT_BATTERY_VOLTAGE_LOWER" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/FAULT_BATTERY_VOLTAGE_LOWER"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_P5V0_SENSOR_SHORT_SUPP" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/P5V0_SENSOR_SHORT_SUPP"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_P5V0_VOLTAGE_OVERVOLTAGE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/P5V0_VOLTAGE_OVERVOLTAGE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_P5V0_VOLTAGE_UNDERVOLTAGE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/P5V0_VOLTAGE_UNDERVOLTAGE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_P3V3_S_VOLTAGE_SENSOR_OVERVOLTAGE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/P3V3_S_VOLTAGE_SENSOR_OVERVOLTAGE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_P3V3_S_VOLTAGE_SENSOR_UNDERVOLTAGE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/P3V3_S_VOLTAGE_SENSOR_UNDERVOLTAGE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_WPC_ASC_ACTIVE_PAD" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/WPC_ASC_ACTIVE_PAD"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_ZMOVER_CURRENT_HIGH" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ZMOVER_CURRENT_HIGH"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_ZMOVER_HALL_SENSOR_DEFECT" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ZMOVER_HALL_SENSOR_DEFECT"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_ZMOVER_HALL_MIN_POSITION_SENSOR_DEFECT" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ZMOVER_HALL_MIN_POSITION_SENSOR_DEFECT"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_ZMOVER_SWITCH_MIN_POSITION_SENSOR_DEFECT" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ZMOVER_SWITCH_MIN_POSITION_SENSOR_DEFECT"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_ZMOVER_ACTUATOR_DEFECT" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ZMOVER_ACTUATOR_DEFECT"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_ZMOVER_IS_BLOCKED" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/Z_MOVER_IS_BLOCKED"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_ZMOVER_WAS_LOWERED_WITH_ACTIVE_FORCE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/Z_MOVER_WAS_LOWERED_WITH_ACTIVE_FORCE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_ZMOVER_ACTIVIATION_TIMEOUT" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/Z_MOVER_ACTIVIATION_TIMEOUT"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_ZMOVER_MOVE_RANDOM" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ZMOVER_MOVE_RANDOM"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_ZMOVER_MOTOR_POSITIV_OVERLOAD" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ZMOVER_MOTOR_POSITIV_OVERLOAD"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_ZMOVER_MOTOR_NEGATIV_OVERLOAD" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ZMOVER_MOTOR_NEGATIV_OVERLOAD"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_ZMOVER_CURRENT_OFFSET" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ZMOVER_CURRENT_OFFSET"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_PWR_GRD_CURRENT_NOT_PLAUSIBLE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/PWR_GRD_CURRENT_NOT_PLAUSIBLE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_B6_TEMP_SC_TO_GND" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/B6_TEMP_SC_TO_GND"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_B6_TEMP_SC_TO_SUP" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/B6_TEMP_SC_TO_SUP"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_RECT_TEMP_SC_TO_GND" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/RECT_TEMP_SC_TO_GND"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_RECT_TEMP_SC_TO_SUP" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/RECT_TEMP_SC_TO_SUP"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_PFC_TEMP_SC_TO_GND" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/PFC_TEMP_SC_TO_GND"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_PFC_TEMP_SC_TO_SUP" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/PFC_TEMP_SC_TO_SUP"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_PFC_MCU_UART_ERROR" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/PFC_MCU_UART_ERROR"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_PFC_UART_COMM_ERROR" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/PFC_UART_COMM_ERROR"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_SENSE_BOARD_DEFECT" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/SENSE_BOARD_DEFECT"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_CTRL_BOARD_DEFECT" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/CTRL_BOARD_DEFECT"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_FOD_TEMP_SENSOR_OPEN_LOOP" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/FOD_TEMP_SENSOR_OPEN_LOOP"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_FOD_TEMP_UNTERVOLTAGE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/FOD_TEMP_UNTERVOLTAGE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_SWITCH_CURR_1_TOO_LOW" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/SWITCH_CURR_1_TOO_LOW"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_SWITCH_CURR_2_TOO_LOW" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/SWITCH_CURR_2_TOO_LOW"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_SWITCH_CURR_3_TOO_LOW" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/SWITCH_CURR_3_TOO_LOW"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_SWITCH_CURR_2_TOO_HIGH" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/SWITCH_CURR_2_TOO_HIGH"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_SWITCH_CURR_3_TOO_HIGH" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/SWITCH_CURR_3_TOO_HIGH"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_WPC_PH1_CURR_EXCEEDED" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/WPC_PH1_CURR_EXCEEDED"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_WPC_PH2_CURR_EXCEEDED" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/WPC_PH2_CURR_EXCEEDED"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_WPC_PH3_CURR_EXCEEDED" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/WPC_PH3_CURR_EXCEEDED"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_WPC_IN_CURRENT_HIGH" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/WPC_IN_CURRENT_HIGH"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_WPC_INPUT_POWER_LOW" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/WPC_INPUT_POWER_LOW"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_INCORRECT_CODING_RESISTOR" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/INCORRECT_CODING_RESISTOR"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_SHORT_CIRCUIT_CODING_RESISTOR" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/SHORT_CIRCUIT_CODING_RESISTOR"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_OPEN_CIRCUIT_CODING_RESISTOR" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/OPEN_CIRCUIT_CODING_RESISTOR"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_ECU_WRONG_CODED" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ECU_WRONG_CODED"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_DATASET_IMPLAUSIBLE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/DATASET_IMPLAUSIBLE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_DATASET_INVALID" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/DATASET_INVALID"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_POS_DS_INVALID" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/POS_DS_INVALID"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_FOD_DS_INVALID" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/FOD_DS_INVALID"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_FAN_1_DEFECT" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/FAN_1_DEFECT"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_ORU_NOT_RECOGNIZED" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/ORU_NOT_RECOGNIZED"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr name="FiMEventSummaryLink_InhChrg_METAL_ON_PAD" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/METAL_ON_PAD"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MAGN_COUPL_NOT_PLAUSIBLE" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MAGN_COUPL_NOT_PLAUSIBLE"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MAGN_COUPL_TOO_HIGH" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MAGN_COUPL_TOO_HIGH"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MAGN_COUPL_TOO_LOW" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MAGN_COUPL_TOO_LOW"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_SAFETY_SHUTDOWN_TEMPERATURE_PAD" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/SAFETY_SHUTDOWN_TEMPERATURE_PAD"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_SAFETY_SHUTDOWN_TEMPERATURE_WU" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/SAFETY_SHUTDOWN_TEMPERATURE_WU"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_MAIN_POWER_RELAY_ERROR" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/MAIN_POWER_RELAY_ERROR"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_SEC_SECURECONNECTION_STATUS_PAD" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/SEC_SECURECONNECTION_STATUS_PAD"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_SEC_MSG_ENCYPTION_FAILURE_PAD" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/SEC_MSG_ENCYPTION_FAILURE_PAD"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_SEC_MSG_DECRYPTION_FAILURE_PAD" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/SEC_MSG_DECRYPTION_FAILURE_PAD"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_SEC_INTERNAL_MALFUNCTION_PAD" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/SEC_INTERNAL_MALFUNCTION_PAD"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_SEC_AUTHENTICATION_MSG_FAILED_PAD" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/SEC_AUTHENTICATION_MSG_FAILED_PAD"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_SEC_UNKNOWN_MSG_RECEIVED_PAD" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/SEC_UNKNOWN_MSG_RECEIVED_PAD"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_POS_VEHICLE_DETECTION_DEFECT" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/POS_VEHICLE_DETECTION_DEFECT"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_FOD_METALL_DETECT_CHARGE_INTERRUPT" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/FOD_METALL_DETECT_CHARGE_INTERRUPT"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                    <d:ctr 
+                           name="FiMEventSummaryLink_InhChrg_BT_SPI_COMMUNICATION_TIMEOUT" 
+                           type="IDENTIFIABLE">
+                      <d:lst name="FiMInputSumEventRef">
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/Dem/Dem/DemConfigSet/BT_SPI_COMMUNICATION_TIMEOUT"/>
+                      </d:lst>
+                      <d:ref name="FiMOutputSumEventRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                    </d:ctr>
+                  </d:lst>
+                  <d:lst name="FiMFID" type="MAP">
+                    <d:ctr name="FID_InhChrg" type="IDENTIFIABLE">
+                      <d:var name="FiMFunctionId" type="INTEGER" value="1">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="FID_TempDly" type="IDENTIFIABLE">
+                      <d:var name="FiMFunctionId" type="INTEGER" value="2">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="FID_ZmErr" type="IDENTIFIABLE">
+                      <d:var name="FiMFunctionId" type="INTEGER" value="3">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="FID_CouplErr" type="IDENTIFIABLE">
+                      <d:var name="FiMFunctionId" type="INTEGER" value="4">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                    </d:ctr>
+                  </d:lst>
+                  <d:lst name="FiMInhibitionConfiguration" type="MAP">
+                    <d:ctr name="FiMInhibitionConfiguration_InhChrg" 
+                           type="IDENTIFIABLE">
+                      <d:var name="FiMInhInhibitionMask" type="ENUMERATION" 
+                             value="FIM_LAST_FAILED">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:ref name="FiMInhFunctionIdRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/FID_InhChrg"/>
+                      <d:ctr name="FiMInhEventId" type="IDENTIFIABLE">
+                        <d:chc name="FiMInhRefChoice" type="IDENTIFIABLE" 
+                               value="FiMInhChoiceSumRef">
+                          <d:ctr name="FiMInhChoiceDemRef" type="IDENTIFIABLE">
+                            <d:ref name="FiMInhEventRef" type="REFERENCE" >
+                              <a:a name="IMPORTER_INFO" value="@DEF"/>
+                            </d:ref>
+                          </d:ctr>
+                          <d:ctr name="FiMInhChoiceSumRef" type="IDENTIFIABLE">
+                            <d:lst name="FiMInhSumRef">
+                              <d:ref type="REFERENCE" 
+                                     value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_InhChrg"/>
+                            </d:lst>
+                          </d:ctr>
+                        </d:chc>
+                      </d:ctr>
+                    </d:ctr>
+                    <d:ctr name="FiMInhibitionConfiguration_TempDly" 
+                           type="IDENTIFIABLE">
+                      <d:var name="FiMInhInhibitionMask" type="ENUMERATION" 
+                             value="FIM_LAST_FAILED">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:ref name="FiMInhFunctionIdRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/FID_TempDly"/>
+                      <d:ctr name="FiMInhEventId" type="IDENTIFIABLE">
+                        <d:chc name="FiMInhRefChoice" type="IDENTIFIABLE" 
+                               value="FiMInhChoiceSumRef">
+                          <d:ctr name="FiMInhChoiceDemRef" type="IDENTIFIABLE">
+                            <d:ref name="FiMInhEventRef" type="REFERENCE" >
+                              <a:a name="IMPORTER_INFO" value="@DEF"/>
+                            </d:ref>
+                          </d:ctr>
+                          <d:ctr name="FiMInhChoiceSumRef" type="IDENTIFIABLE">
+                            <d:lst name="FiMInhSumRef">
+                              <d:ref type="REFERENCE" 
+                                     value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_TempDly"/>
+                            </d:lst>
+                          </d:ctr>
+                        </d:chc>
+                      </d:ctr>
+                    </d:ctr>
+                    <d:ctr name="FiMInhibitionConfiguration_ZmErr" 
+                           type="IDENTIFIABLE">
+                      <d:var name="FiMInhInhibitionMask" type="ENUMERATION" 
+                             value="FIM_LAST_FAILED">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:ref name="FiMInhFunctionIdRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/FID_ZmErr"/>
+                      <d:ctr name="FiMInhEventId" type="IDENTIFIABLE">
+                        <d:chc name="FiMInhRefChoice" type="IDENTIFIABLE" 
+                               value="FiMInhChoiceSumRef">
+                          <d:ctr name="FiMInhChoiceDemRef" type="IDENTIFIABLE">
+                            <d:ref name="FiMInhEventRef" type="REFERENCE" >
+                              <a:a name="IMPORTER_INFO" value="@DEF"/>
+                            </d:ref>
+                          </d:ctr>
+                          <d:ctr name="FiMInhChoiceSumRef" type="IDENTIFIABLE">
+                            <d:lst name="FiMInhSumRef">
+                              <d:ref type="REFERENCE" 
+                                     value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_ZmErr"/>
+                            </d:lst>
+                          </d:ctr>
+                        </d:chc>
+                      </d:ctr>
+                    </d:ctr>
+                    <d:ctr name="FiMInhibitionConfiguration_CouplErr" 
+                           type="IDENTIFIABLE">
+                      <d:var name="FiMInhInhibitionMask" type="ENUMERATION" 
+                             value="FIM_LAST_FAILED">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:ref name="FiMInhFunctionIdRef" type="REFERENCE" 
+                             value="ASPath:/FiM/FiM/FiM_Config_0/FID_CouplErr"/>
+                      <d:ctr name="FiMInhEventId" type="IDENTIFIABLE">
+                        <d:chc name="FiMInhRefChoice" type="IDENTIFIABLE" 
+                               value="FiMInhChoiceSumRef">
+                          <d:ctr name="FiMInhChoiceDemRef" type="IDENTIFIABLE">
+                            <d:ref name="FiMInhEventRef" type="REFERENCE" >
+                              <a:a name="IMPORTER_INFO" value="@DEF"/>
+                            </d:ref>
+                          </d:ctr>
+                          <d:ctr name="FiMInhChoiceSumRef" type="IDENTIFIABLE">
+                            <d:lst name="FiMInhSumRef">
+                              <d:ref type="REFERENCE" 
+                                     value="ASPath:/FiM/FiM/FiM_Config_0/EVENT_SUMMARY_CouplErr"/>
+                            </d:lst>
+                          </d:ctr>
+                        </d:chc>
+                      </d:ctr>
+                    </d:ctr>
+                  </d:lst>
+                  <d:lst name="FiMSummaryEventId" type="MAP">
+                    <d:ctr name="EVENT_SUMMARY_InhChrg" type="IDENTIFIABLE">
+                      <d:var name="FiMEventSumId" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="EVENT_SUMMARY_TempDly" type="IDENTIFIABLE">
+                      <d:var name="FiMEventSumId" type="INTEGER" value="1">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="EVENT_SUMMARY_ZmErr" type="IDENTIFIABLE">
+                      <d:var name="FiMEventSumId" type="INTEGER" value="2">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="EVENT_SUMMARY_CouplErr" type="IDENTIFIABLE">
+                      <d:var name="FiMEventSumId" type="INTEGER" value="3">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                    </d:ctr>
+                  </d:lst>
+                </d:ctr>
+              </d:lst>
+              <d:ctr name="FiMGeneral" type="IDENTIFIABLE">
+                <d:var name="FiMDataFixed" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="FiMDevErrorDetect" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="FiMEventUpdateTriggeredByDem" type="BOOLEAN" 
+                       value="false"/>
+                <d:var name="FiMRteUsage" type="BOOLEAN" value="true"/>
+                <d:var name="FiMMaxEventFidLinks" type="INTEGER" value="65535">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="FiMMaxEventsPerFid" type="INTEGER" value="255">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="FiMMaxFidsPerEvent" type="INTEGER" value="65535">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="FiMMaxSummaryEvents" type="INTEGER" value="65535">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="FiMMaxSummaryLinks" type="INTEGER" value="65535">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="FiMMaxTotalLinks" type="INTEGER" value="65535">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="FiMTaskTime" type="FLOAT" value="0.02">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="FiMVersionInfoApi" type="BOOLEAN" value="true"/>
+              </d:ctr>
+            </d:ctr>
+          </d:chc>
+        </d:lst>
+      </d:ctr>
+    </d:lst>
+  </d:ctr>
+
+</datamodel>

@@ -1,0 +1,121 @@
+<?xml version='1.0'?>
+<datamodel version="3.0" 
+           xmlns="http://www.tresos.de/_projects/DataModel2/08/root.xsd" 
+           xmlns:a="http://www.tresos.de/_projects/DataModel2/08/attribute.xsd" 
+           xmlns:v="http://www.tresos.de/_projects/DataModel2/06/schema.xsd" 
+           xmlns:d="http://www.tresos.de/_projects/DataModel2/06/data.xsd">
+
+  <d:ctr type="AUTOSAR" factory="autosar" 
+         xmlns:ad="http://www.tresos.de/_projects/DataModel2/08/admindata.xsd" 
+         xmlns:icc="http://www.tresos.de/_projects/DataModel2/08/implconfigclass.xsd" 
+         xmlns:mt="http://www.tresos.de/_projects/DataModel2/11/multitest.xsd" >
+    <d:lst type="TOP-LEVEL-PACKAGES">
+      <d:ctr name="SwCVoltageMonitor" type="AR-PACKAGE">
+        <d:lst type="ELEMENTS">
+          <d:chc name="SwCVoltageMonitor" type="AR-ELEMENT" 
+                 value="MODULE-CONFIGURATION">
+            <d:ctr type="MODULE-CONFIGURATION">
+              <a:a name="DEF" value="ASPath:/TS_TxDxM2I1R0/SwCVoltageMonitor"/>
+              <d:ctr name="CommonPublishedInformation" type="IDENTIFIABLE">
+                <d:var name="ArMajorVersion" type="INTEGER" value="4"/>
+                <d:var name="ArMinorVersion" type="INTEGER" value="0"/>
+                <d:var name="ArPatchVersion" type="INTEGER" value="3"/>
+                <d:var name="SwMajorVersion" type="INTEGER" value="2"/>
+                <d:var name="SwMinorVersion" type="INTEGER" value="1"/>
+                <d:var name="SwPatchVersion" type="INTEGER" value="0"/>
+                <d:var name="ModuleId" type="INTEGER" value="255">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorId" type="INTEGER" value="1">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorApiInfix" type="STRING" value="">
+                  <a:a name="ENABLE" value="false"/>
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="Release" type="STRING" value="">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+              </d:ctr>
+              <d:var name="IMPLEMENTATION_CONFIG_VARIANT" type="ENUMERATION" 
+                     value="VariantPreCompile">
+                <a:a name="IMPORTER_INFO" value="@DEF"/>
+              </d:var>
+              <d:ctr name="Common" type="IDENTIFIABLE">
+                <d:var name="VoltageNormalization" type="BOOLEAN" value="false"/>
+                <d:var name="VoltageFactor" type="INTEGER" value="1">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VoltageDivider" type="INTEGER" value="1">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VoltageOffset" type="INTEGER" value="0">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:ref name="VoltageDid" type="REFERENCE" 
+                       value="ASPath:/Dcm/Dcm/DcmDsp/DcmDspDid_286"/>
+                <d:var name="WatchdogEnabled" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="WatchdogMaxAliveCycleOffset" type="INTEGER" 
+                       value="1">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="WatchdogMinAliveCycleOffset" type="INTEGER" 
+                       value="1">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="WatchdogToleratedFailedCycles" type="INTEGER" 
+                       value="1">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="DemARpackagePath" type="STRING" 
+                       value="/AUTOSAR_Dem/Services/PortInterfaces"/>
+                <d:var name="EcuMPortInterfacePath" type="STRING" 
+                       value="/PortInterface"/>
+                <d:var name="EcuMModeDeclarationPath" type="STRING" 
+                       value="/ModeDeclarationGroup"/>
+                <d:var name="EcuMDataTypeMappingSetPath" type="STRING" 
+                       value="/ModeDeclarationGroup/EcuM_Mode_DataTypeMappingSet"/>
+              </d:ctr>
+              <d:ctr name="General" type="IDENTIFIABLE">
+                <d:var name="VoltageDevErrorDetect" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VoltageMonitorTaskTime" type="INTEGER" value="10">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="PackageTitle" type="STRING" value="EbSwcs"/>
+              </d:ctr>
+              <d:ctr name="VoltageMonitor" type="IDENTIFIABLE">
+                <d:lst name="VoltageMonitorConfig" type="MAP">
+                  <d:ctr name="FAULT_BATTERY_VOLTAGE_LOWER" type="IDENTIFIABLE">
+                    <d:var name="VoltageMonitorThreshold" type="INTEGER" 
+                           value="8900"/>
+                    <d:var name="VoltageMonitorHysteresis" type="INTEGER" 
+                           value="100"/>
+                    <d:var name="VoltageMonitorType" type="ENUMERATION" 
+                           value="VM_SETTYPE_UV">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:var name="VoltageMonitorDtc" type="BOOLEAN" value="true"/>
+                  </d:ctr>
+                  <d:ctr name="FAULT_BATTERY_VOLTAGE_UPPER" type="IDENTIFIABLE">
+                    <d:var name="VoltageMonitorThreshold" type="INTEGER" 
+                           value="16100"/>
+                    <d:var name="VoltageMonitorHysteresis" type="INTEGER" 
+                           value="100"/>
+                    <d:var name="VoltageMonitorType" type="ENUMERATION" 
+                           value="VM_SETTYPE_OV"/>
+                    <d:var name="VoltageMonitorDtc" type="BOOLEAN" value="true"/>
+                  </d:ctr>
+                </d:lst>
+              </d:ctr>
+            </d:ctr>
+          </d:chc>
+        </d:lst>
+      </d:ctr>
+    </d:lst>
+  </d:ctr>
+
+</datamodel>

@@ -1,0 +1,725 @@
+<?xml version='1.0'?>
+<datamodel version="3.0" 
+           xmlns="http://www.tresos.de/_projects/DataModel2/08/root.xsd" 
+           xmlns:a="http://www.tresos.de/_projects/DataModel2/08/attribute.xsd" 
+           xmlns:v="http://www.tresos.de/_projects/DataModel2/06/schema.xsd" 
+           xmlns:d="http://www.tresos.de/_projects/DataModel2/06/data.xsd">
+
+  <d:ctr type="AUTOSAR" factory="autosar" 
+         xmlns:ad="http://www.tresos.de/_projects/DataModel2/08/admindata.xsd" 
+         xmlns:icc="http://www.tresos.de/_projects/DataModel2/08/implconfigclass.xsd" 
+         xmlns:mt="http://www.tresos.de/_projects/DataModel2/11/multitest.xsd" >
+    <d:lst type="TOP-LEVEL-PACKAGES">
+      <d:ctr name="EcuM" type="AR-PACKAGE">
+        <d:lst type="ELEMENTS">
+          <d:chc name="EcuM" type="AR-ELEMENT" value="MODULE-CONFIGURATION">
+            <d:ctr type="MODULE-CONFIGURATION">
+              <a:a name="DEF" value="ASPath:/TS_TxDxM1I1R0_MLBevoStub/EcuM"/>
+              <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+              <a:a name="MODULE-DESCRIPTION-REF" 
+                   value="ASPath:/TS_TxDxM1I1R0_MLBevoStub/EcuM_Impl"/>
+              <d:var name="IMPLEMENTATION_CONFIG_VARIANT" type="ENUMERATION" 
+                     value="VariantPreCompile">
+                <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+              </d:var>
+              <d:ctr name="CommonPublishedInformation" type="IDENTIFIABLE">
+                <d:var name="ArMajorVersion" type="INTEGER" value="1"/>
+                <d:var name="ArMinorVersion" type="INTEGER" value="2"/>
+                <d:var name="ArPatchVersion" type="INTEGER" value="0"/>
+                <d:var name="SwMajorVersion" type="INTEGER" value="1"/>
+                <d:var name="SwMinorVersion" type="INTEGER" value="1"/>
+                <d:var name="SwPatchVersion" type="INTEGER" value="0"/>
+                <d:var name="ModuleId" type="INTEGER" value="10">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorId" type="INTEGER" value="1">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorApiInfix" type="STRING" value="">
+                  <a:a name="ENABLE" value="false"/>
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="Release" type="STRING" value="">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+              </d:ctr>
+              <d:ctr name="EcuMGeneral" type="IDENTIFIABLE">
+                <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                <d:var name="EcuMIncludeRte" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMIncludeDem" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMEnableProdErrorReporting" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMDevErrorDetect" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMVersionInfoApi" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMIncludeDet" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMIncludeNvramMgr" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMIncludeWdgM" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMMainFunctionPeriod" type="FLOAT" value="0.02">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMTTIIEnabled" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMIncludeComM" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMCheckParameter" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMCheckPointerParameter" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMCheckStateParameter" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMCheckWkSourceParameter" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMCheckBootTargetParameter" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMCheckSleepModeParameter" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMCheckUserParameter" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMReportAllRunRequestsKilled" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMReportRamCheckFailed" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMDetErrorhookFunction" type="STRING" 
+                       value="Det_ReportError">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMDemSetError" type="STRING" 
+                       value="Dem_ReportErrorStatus">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMCheckUnInit" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMCheckConfigType" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:lst name="EcuMAvailableMcuModes"/>
+                <d:var name="EcuMIncludeSchM" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMMcuIncludeFile" type="STRING" value="Mcu.h">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMWdgMIncludeFile" type="STRING" value="WdgM.h">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMComMIncludeFile" type="STRING" value="ComM.h">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMComMCallbackFile" type="STRING" 
+                       value="ComM_EcuM.h">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMRteIncludeFile" type="STRING" 
+                       value="Rte_Main.h">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMNvmIncludeFile" type="STRING" value="Nvm.h">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMDetIncludeFile" type="STRING" value="Det.h">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMDemIncludeFile" type="STRING" value="Dem.h">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMOsIncludeFile" type="STRING" value="Os.h">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMSchMIncludeFile" type="STRING" 
+                       value="Rte_Main.h">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMDevErrorDetectIncludeFile" type="STRING" 
+                       value="Det.h">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMProdErrorDetectIncludeFile" type="STRING" 
+                       value="Dem.h">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMNvmCancelWriteAllTimeout" type="FLOAT" 
+                       value="60.0">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMAmdRuntimeMeasurement" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:var name="EcuMShutdownOSFunction" type="STRING" 
+                       value="ShutdownOS(E_OK)">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                </d:var>
+                <d:lst name="EcuMAdditionalIncludes">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  <d:var type="STRING" value="EcuM_Callouts.h">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var type="STRING" value="Rte_EcuM.h">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                </d:lst>
+                <d:ref name="EcuMTTIISleepModeRef" type="REFERENCE" >
+                  <a:a name="ENABLE" value="false"/>
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:ref>
+                <d:ref name="EcuMIrqHandling" type="REFERENCE" >
+                  <a:a name="ENABLE" value="false"/>
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:ref>
+                <d:ref name="EcuMTTIIWakeupSourceRef" type="REFERENCE" >
+                  <a:a name="ENABLE" value="false"/>
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:ref>
+                <d:ref name="EcuMWkupIsrHandling" type="REFERENCE" >
+                  <a:a name="ENABLE" value="false"/>
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:ref>
+                <d:ctr name="EcuMApiSwitches" type="IDENTIFIABLE">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  <d:var name="EcuMKillAllRUNRequestApi" type="BOOLEAN" 
+                         value="true">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMGetValidatedWakeupEventsApi" type="BOOLEAN" 
+                         value="true">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMGetExpiredWakeupEventsApi" type="BOOLEAN" 
+                         value="true">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMGetStatusOfWakeupSourceApi" type="BOOLEAN" 
+                         value="true">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                </d:ctr>
+                <d:ctr name="EcuMCalloutSwitches" type="IDENTIFIABLE">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  <d:var name="EcuMOnRTEStartupCallout" type="BOOLEAN" 
+                         value="true">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMOnEnterRunCallout" type="BOOLEAN" 
+                         value="true">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMOnExitRunCallout" type="BOOLEAN" value="true">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMOnExitPostRunCallout" type="BOOLEAN" 
+                         value="true">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMOnPrepShutdownCallout" type="BOOLEAN" 
+                         value="true">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMOnGoSleepCallout" type="BOOLEAN" value="true">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMOnGoOffOneCallout" type="BOOLEAN" 
+                         value="true">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMOnGoOffTwoCallout" type="BOOLEAN" 
+                         value="true">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMOnWakeupReactionCallout" type="BOOLEAN" 
+                         value="true">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMGeneratorCompatibilityError" type="BOOLEAN" 
+                         value="false">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMOnErrorHook" type="BOOLEAN" value="false">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMOnStateChangeCallout" type="BOOLEAN" 
+                         value="false">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                </d:ctr>
+                <d:lst name="EcuMAppMode" type="MAP"/>
+                <d:ctr name="EcuMServicePortConfig" type="IDENTIFIABLE">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  <d:var name="EcuMGenStateRequestPort" type="BOOLEAN" 
+                         value="false">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMGenBootTargetPort" type="BOOLEAN" 
+                         value="false">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMGenApplicationModePort" type="BOOLEAN" 
+                         value="false">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMGenShutdownTargetPort" type="BOOLEAN" 
+                         value="false">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMServiceComponentName" type="STRING" 
+                         value="EcuM">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMModeSwitchCbkName" type="STRING" 
+                         value="Rte_Switch_currentMode_currentMode">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMGenModeSwitchPort" type="BOOLEAN" 
+                         value="true">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMModeSwitchRteAck" type="BOOLEAN" 
+                         value="false">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                </d:ctr>
+              </d:ctr>
+              <d:lst name="EcuMConfiguration" type="MAP">
+                <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                <d:ctr name="EcuMConfiguration" type="IDENTIFIABLE">
+                  <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  <d:var name="EcuMNvramReadallTimeout" type="FLOAT" value="0.0">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMNvramWriteallTimeout" type="FLOAT" 
+                         value="60.0">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMRunMinimumDuration" type="FLOAT" value="0.1">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMSleepActivityPeriod" type="FLOAT" value="0.0">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:var name="EcuMComStackTypesIncludeFile" type="STRING" 
+                         value="ComStack_Types.h">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:var>
+                  <d:ref name="EcuMDefaultAppMode" type="REFERENCE" 
+                         value="ASPath:/Os/Os/OsAppMode">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                  </d:ref>
+                  <d:lst name="EcuMUserConfig" type="MAP">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                    <d:ctr name="EcuMUserConfig_FirstUser" type="IDENTIFIABLE">
+                      <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                      <d:var name="EcuMUser" type="INTEGER" value="1">
+                        <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                      </d:var>
+                    </d:ctr>
+                  </d:lst>
+                  <d:ctr name="EcuMDefaultShutdownTarget" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                    <d:var name="EcuMDefaultState" type="ENUMERATION" 
+                           value="EcuMStateSleep">
+                      <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                    </d:var>
+                    <d:ref name="EcuMDefaultSleepModeRef" type="REFERENCE" 
+                           value="ASPath:/EcuM/EcuM/EcuMConfiguration/EcuMSleepMode">
+                      <a:a name="ENABLE" value="false"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:lst name="EcuMSleepMode" type="MAP">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                    <d:ctr name="EcuMSleepMode" type="IDENTIFIABLE">
+                      <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                      <d:var name="EcuMSleepModeId" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                      </d:var>
+                      <d:var name="EcuMSleepModeName" type="STRING" 
+                             value="InitialEcuCSleepMode">
+                        <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                      </d:var>
+                      <d:var name="EcuMSleepModeSuspend" type="BOOLEAN" 
+                             value="false">
+                        <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                      </d:var>
+                      <d:ref name="EcuMSleepModeMcuModeRef" type="REFERENCE" 
+                             value="ASPath:/Mcu/Mcu/McuModuleConfiguration_0/McuModeSettingConf_0">
+                        <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                      </d:ref>
+                      <d:lst name="EcuMWakeupSourceMask">
+                        <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/EcuM/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_RESET">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:ref>
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/EcuM/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_INTERNAL_RESET">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:ref>
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/EcuM/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_EXTERNAL_WDG">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:ref>
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/EcuM/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_INTERNAL_WDG">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:ref>
+                        <d:ref type="REFERENCE" 
+                               value="ASPath:/EcuM/EcuM/EcuMConfiguration/EcuMCommonConfiguration/ECUM_WKSOURCE_POWER">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:ref>
+                      </d:lst>
+                      <d:var name="EcuMMcuMode" type="STRING" >
+                        <a:a name="ENABLE" value="false"/>
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:ref name="EcuMSleepModeWdgMModeRef" type="REFERENCE" >
+                        <a:a name="ENABLE" value="false"/>
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:ref>
+                    </d:ctr>
+                  </d:lst>
+                  <d:ctr name="EcuMDriverInitListOne" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                    <d:lst name="EcuMDriverInitItem" type="MAP">
+                      <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                      <d:ctr 
+                             name="EcuMDriverInitItem_EcuM_Callout_DriverInitListOne" 
+                             type="IDENTIFIABLE">
+                        <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        <d:var name="EcuMModuleID" type="STRING" value="Code">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMAdditionalInitCode" type="STRING" 
+                               value="EcuM_Callout_DriverInitListOne();">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMModuleService" type="STRING" >
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                      </d:ctr>
+                    </d:lst>
+                  </d:ctr>
+                  <d:ctr name="EcuMDriverInitListTwo" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                    <d:lst name="EcuMDriverInitItem" type="MAP">
+                      <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                      <d:ctr 
+                             name="EcuMDriverInitItem_EcuM_Callout_DriverInitListTwo" 
+                             type="IDENTIFIABLE">
+                        <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        <d:var name="EcuMModuleID" type="STRING" value="Code">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMAdditionalInitCode" type="STRING" 
+                               value="EcuM_Callout_DriverInitListTwo();">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMModuleService" type="STRING" >
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                      </d:ctr>
+                    </d:lst>
+                  </d:ctr>
+                  <d:ctr name="EcuMDriverInitListThree" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                    <d:lst name="EcuMDriverInitItem" type="MAP">
+                      <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                      <d:ctr 
+                             name="EcuMDriverInitItem_BswM_RequestSTARTUP_TWO_AandB" 
+                             type="IDENTIFIABLE">
+                        <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        <d:var name="EcuMModuleID" type="STRING" value="Code">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMAdditionalInitCode" type="STRING" 
+                               value="EcuM_Callout_BswM_RequestSTARTUP_TWO_AaB();">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMModuleService" type="STRING" >
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                      </d:ctr>
+                    </d:lst>
+                  </d:ctr>
+                  <d:ctr name="EcuMDriverRestartList" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                    <d:lst name="EcuMDriverInitItem" type="MAP"/>
+                  </d:ctr>
+                  <d:lst name="EcuMModuleConfigurationRef"/>
+                  <d:ref name="EcuMNormalMcuModeRef" type="REFERENCE" >
+                    <a:a name="ENABLE" value="false"/>
+                    <a:a name="IMPORTER_INFO" value="@DEF"/>
+                  </d:ref>
+                  <d:ctr name="EcuMDriverInitListZero" type="IDENTIFIABLE">
+                    <a:a name="ENABLE" value="false"/>
+                    <d:lst name="EcuMDriverInitItem" type="MAP"/>
+                  </d:ctr>
+                  <d:ctr name="EcuMWdgM" type="IDENTIFIABLE">
+                    <a:a name="ENABLE" value="true"/>
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                    <a:a name="SHORT-NAME" type="NodeName" value="EcuMWdgM0"/>
+                    <d:ref name="EcuMWdgMPostRunModeRef" type="REFERENCE" >
+                      <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                    </d:ref>
+                    <d:ref name="EcuMWdgMRunModeRef" type="REFERENCE" >
+                      <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                    </d:ref>
+                    <d:ref name="EcuMWdgMShutdownModeRef" type="REFERENCE" >
+                      <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                    </d:ref>
+                    <d:ref name="EcuMWdgMStartupModeRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                    <d:ref name="EcuMWdgMWakeupModeRef" type="REFERENCE" >
+                      <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                    </d:ref>
+                    <d:ref name="EcuMSupervisedEntityRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:lst name="EcuMTTII" type="MAP"/>
+                  <d:ctr name="EcuMCommonConfiguration" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                    <d:var name="EcuMConfigConsistencyHash" type="INTEGER" 
+                           value="0">
+                      <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                    </d:var>
+                    <d:lst name="EcuMWakeupSource" type="MAP">
+                      <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                      <d:ctr name="ECUM_WKSOURCE_RESET" type="IDENTIFIABLE">
+                        <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        <d:var name="EcuMResetReason" type="INTEGER" value="-1">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMWakeupSourceId" type="INTEGER" 
+                               value="2">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMWakeupSourcePolling" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMValidationTimeout" type="FLOAT" 
+                               value="0.0">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMCheckWakeupTimeout" type="FLOAT" 
+                               value="0.0">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:ref name="EcuMComMChannelRef" type="REFERENCE" >
+                          <a:a name="ENABLE" value="false"/>
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:ref>
+                      </d:ctr>
+                      <d:ctr name="ECUM_WKSOURCE_INTERNAL_RESET" 
+                             type="IDENTIFIABLE">
+                        <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        <d:var name="EcuMResetReason" type="INTEGER" value="-1">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMWakeupSourceId" type="INTEGER" 
+                               value="3">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMWakeupSourcePolling" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMValidationTimeout" type="FLOAT" 
+                               value="0.0">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMCheckWakeupTimeout" type="FLOAT" 
+                               value="0.0">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:ref name="EcuMComMChannelRef" type="REFERENCE" >
+                          <a:a name="ENABLE" value="false"/>
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:ref>
+                      </d:ctr>
+                      <d:ctr name="ECUM_WKSOURCE_EXTERNAL_WDG" 
+                             type="IDENTIFIABLE">
+                        <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        <d:var name="EcuMResetReason" type="INTEGER" value="-1">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMWakeupSourceId" type="INTEGER" 
+                               value="5">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMWakeupSourcePolling" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMValidationTimeout" type="FLOAT" 
+                               value="0.0">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMCheckWakeupTimeout" type="FLOAT" 
+                               value="0.0">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:ref name="EcuMComMChannelRef" type="REFERENCE" >
+                          <a:a name="ENABLE" value="false"/>
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:ref>
+                      </d:ctr>
+                      <d:ctr name="ECUM_WKSOURCE_INTERNAL_WDG" 
+                             type="IDENTIFIABLE">
+                        <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        <d:var name="EcuMResetReason" type="INTEGER" value="-1">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMWakeupSourceId" type="INTEGER" 
+                               value="4">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMWakeupSourcePolling" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMValidationTimeout" type="FLOAT" 
+                               value="0.0">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMCheckWakeupTimeout" type="FLOAT" 
+                               value="0.0">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:ref name="EcuMComMChannelRef" type="REFERENCE" >
+                          <a:a name="ENABLE" value="false"/>
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:ref>
+                      </d:ctr>
+                      <d:ctr name="ECUM_WKSOURCE_POWER" type="IDENTIFIABLE">
+                        <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        <d:var name="EcuMResetReason" type="INTEGER" value="-1">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMWakeupSourceId" type="INTEGER" 
+                               value="1">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMWakeupSourcePolling" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMValidationTimeout" type="FLOAT" 
+                               value="0.0">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMCheckWakeupTimeout" type="FLOAT" 
+                               value="0.0">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:ref name="EcuMComMChannelRef" type="REFERENCE" >
+                          <a:a name="ENABLE" value="false"/>
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:ref>
+                      </d:ctr>
+                      <d:ctr name="MLBevo_HCAN" type="IDENTIFIABLE">
+                        <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        <d:var name="EcuMWakeupSourceId" type="INTEGER" 
+                               value="6">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMWakeupSourcePolling" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMResetReason" type="INTEGER" value="-1">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMValidationTimeout" type="FLOAT" 
+                               value="0.0">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMCheckWakeupTimeout" type="FLOAT" 
+                               value="0.0">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:ref name="EcuMComMChannelRef" type="REFERENCE" >
+                          <a:a name="ENABLE" value="false"/>
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:ref>
+                      </d:ctr>
+                      <d:ctr name="BT_CAN_MOD_V40" type="IDENTIFIABLE">
+                        <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        <d:var name="EcuMWakeupSourceId" type="INTEGER" 
+                               value="7">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMWakeupSourcePolling" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMResetReason" type="INTEGER" value="-1">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMValidationTimeout" type="FLOAT" 
+                               value="0.0">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:var name="EcuMCheckWakeupTimeout" type="FLOAT" 
+                               value="0.0">
+                          <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                        </d:var>
+                        <d:ref name="EcuMComMChannelRef" type="REFERENCE" >
+                          <a:a name="ENABLE" value="false"/>
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:ref>
+                      </d:ctr>
+                    </d:lst>
+                  </d:ctr>
+                </d:ctr>
+              </d:lst>
+              <d:ctr name="VectorCommonData" type="IDENTIFIABLE">
+                <a:a name="IMPORTER_INFO" value="EcuM_Importer"/>
+                <d:var name="BswmdVersion" type="STRING" value="6.03.03">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+              </d:ctr>
+            </d:ctr>
+          </d:chc>
+        </d:lst>
+      </d:ctr>
+    </d:lst>
+  </d:ctr>
+
+</datamodel>

@@ -1,0 +1,237 @@
+<?xml version='1.0'?>
+<datamodel version="3.0" 
+           xmlns="http://www.tresos.de/_projects/DataModel2/08/root.xsd" 
+           xmlns:a="http://www.tresos.de/_projects/DataModel2/08/attribute.xsd" 
+           xmlns:v="http://www.tresos.de/_projects/DataModel2/06/schema.xsd" 
+           xmlns:d="http://www.tresos.de/_projects/DataModel2/06/data.xsd">
+
+  <d:ctr type="AUTOSAR" factory="autosar" 
+         xmlns:ad="http://www.tresos.de/_projects/DataModel2/08/admindata.xsd" 
+         xmlns:icc="http://www.tresos.de/_projects/DataModel2/08/implconfigclass.xsd" 
+         xmlns:mt="http://www.tresos.de/_projects/DataModel2/11/multitest.xsd" >
+    <d:lst type="TOP-LEVEL-PACKAGES">
+      <d:ctr name="SwCCanMonitor" type="AR-PACKAGE">
+        <d:lst type="ELEMENTS">
+          <d:chc name="SwCCanMonitor" type="AR-ELEMENT" 
+                 value="MODULE-CONFIGURATION">
+            <d:ctr type="MODULE-CONFIGURATION">
+              <a:a name="DEF" value="ASPath:/TS_TxDxM2I1R0/SwCCanMonitor"/>
+              <d:ctr name="CommonPublishedInformation" type="IDENTIFIABLE">
+                <d:var name="ArMajorVersion" type="INTEGER" value="4"/>
+                <d:var name="ArMinorVersion" type="INTEGER" value="0"/>
+                <d:var name="ArPatchVersion" type="INTEGER" value="3"/>
+                <d:var name="SwMajorVersion" type="INTEGER" value="2"/>
+                <d:var name="SwMinorVersion" type="INTEGER" value="1"/>
+                <d:var name="SwPatchVersion" type="INTEGER" value="0"/>
+                <d:var name="ModuleId" type="INTEGER" value="255">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorId" type="INTEGER" value="1">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorApiInfix" type="STRING" value="">
+                  <a:a name="ENABLE" value="false"/>
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="Release" type="STRING" value="">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+              </d:ctr>
+              <d:var name="IMPLEMENTATION_CONFIG_VARIANT" type="ENUMERATION" 
+                     value="VariantPreCompile">
+                <a:a name="IMPORTER_INFO" value="@DEF"/>
+              </d:var>
+              <d:ctr name="CanMonitorCfg" type="IDENTIFIABLE">
+                <d:var name="CanMonitorSelfDiagLowVoltage" type="INTEGER" 
+                       value="9000">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="CanMonitorSelfDiagLowVoltageHysteresis" 
+                       type="INTEGER" value="500">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="CanMonitorSelfDiagHighVoltage" type="INTEGER" 
+                       value="17500">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="CanMonitorSelfDiagHighVoltageHysteresis" 
+                       type="INTEGER" value="500">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="CanMonitorDelayDiagStart" type="INTEGER" 
+                       value="500">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="CanMonitorECDelayBusOff" type="INTEGER" value="450">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="CanMonitorProvideKDErrorBit" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="CanMonitorProvideSelfDiagnosisStatus" 
+                       type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="CanMonitorSupportNWDFBit" type="BOOLEAN" 
+                       value="false"/>
+                <d:var name="NWDFOptInterfacePathName" type="STRING" value="">
+                  <a:a name="ENABLE" value="false"/>
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="NWDFOptDataTypeShortName" type="STRING" value="">
+                  <a:a name="ENABLE" value="false"/>
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="NWDFgueltigOptDataTypeShortName" type="STRING" 
+                       value="">
+                  <a:a name="ENABLE" value="false"/>
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="WatchdogEnabled" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="WatchdogMaxAliveCycleOffset" type="INTEGER" 
+                       value="1">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="WatchdogMinAliveCycleOffset" type="INTEGER" 
+                       value="1">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="WatchdogToleratedFailedCycles" type="INTEGER" 
+                       value="1">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="CanMonitorClamp15Interface" type="ENUMERATION" 
+                       value="SenderReceiver">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="CanMonitorClamp30Interface" type="ENUMERATION" 
+                       value="SenderReceiver">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="CanMonitorCombinedNetworkTimeoutActivePort" 
+                       type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:lst name="CanMonitorCanNetworks" type="MAP">
+                  <d:ctr name="CanNetwork_0" type="IDENTIFIABLE">
+                    <d:ref name="CanMonitorCanNetworkRef" type="REFERENCE" 
+                           value="ASPath:/CanSM/CanSM/CanStateManagerConfiguration/MLBevo_HCAN"/>
+                    <d:var name="CanMonitorBusTimeoutActivePort" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:lst name="CanMonitorIPdus" type="MAP">
+                      <d:ctr name="CanMonitorIPdus_0" type="IDENTIFIABLE">
+                        <d:ref name="CanMonitorIPduRef" type="REFERENCE" 
+                               value="ASPath:/Com/Com/ComConfig/Pdu_DEV_AWC_Resp_50__MLBevo_HCAN"/>
+                        <d:var name="OptInterfacePathName" type="STRING" 
+                               value="">
+                          <a:a name="ENABLE" value="false"/>
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="OptDataTypeShortName" type="STRING" 
+                               value="">
+                          <a:a name="ENABLE" value="false"/>
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                      </d:ctr>
+                      <d:ctr name="CanMonitorIPdus_1" type="IDENTIFIABLE">
+                        <d:ref name="CanMonitorIPduRef" type="REFERENCE" 
+                               value="ASPath:/Com/Com/ComConfig/Pdu_DEV_AWC_Resp_51__MLBevo_HCAN"/>
+                        <d:var name="OptInterfacePathName" type="STRING" 
+                               value="">
+                          <a:a name="ENABLE" value="false"/>
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="OptDataTypeShortName" type="STRING" 
+                               value="">
+                          <a:a name="ENABLE" value="false"/>
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                      </d:ctr>
+                      <d:ctr name="CanMonitorIPdus_2" type="IDENTIFIABLE">
+                        <d:ref name="CanMonitorIPduRef" type="REFERENCE" 
+                               value="ASPath:/Com/Com/ComConfig/Pdu_DEV_AWC_Resp_52__MLBevo_HCAN"/>
+                        <d:var name="OptInterfacePathName" type="STRING" 
+                               value="">
+                          <a:a name="ENABLE" value="false"/>
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="OptDataTypeShortName" type="STRING" 
+                               value="">
+                          <a:a name="ENABLE" value="false"/>
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                      </d:ctr>
+                      <d:ctr name="CanMonitorIPdus_3" type="IDENTIFIABLE">
+                        <d:ref name="CanMonitorIPduRef" type="REFERENCE" 
+                               value="ASPath:/Com/Com/ComConfig/Pdu_DEV_AWC_Resp_53__MLBevo_HCAN"/>
+                        <d:var name="OptInterfacePathName" type="STRING" 
+                               value="">
+                          <a:a name="ENABLE" value="false"/>
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="OptDataTypeShortName" type="STRING" 
+                               value="">
+                          <a:a name="ENABLE" value="false"/>
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                      </d:ctr>
+                      <d:ctr name="CanMonitorIPdus_4" type="IDENTIFIABLE">
+                        <d:ref name="CanMonitorIPduRef" type="REFERENCE" 
+                               value="ASPath:/Com/Com/ComConfig/Pdu_DEV_AWC_Resp_54__MLBevo_HCAN"/>
+                        <d:var name="OptInterfacePathName" type="STRING" 
+                               value="">
+                          <a:a name="ENABLE" value="false"/>
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="OptDataTypeShortName" type="STRING" 
+                               value="">
+                          <a:a name="ENABLE" value="false"/>
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                      </d:ctr>
+                      <d:ctr name="CanMonitorIPdus_5" type="IDENTIFIABLE">
+                        <d:ref name="CanMonitorIPduRef" type="REFERENCE" 
+                               value="ASPath:/Com/Com/ComConfig/Pdu_DEV_AWC_Resp_55__MLBevo_HCAN"/>
+                        <d:var name="OptInterfacePathName" type="STRING" 
+                               value="">
+                          <a:a name="ENABLE" value="false"/>
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                        <d:var name="OptDataTypeShortName" type="STRING" 
+                               value="">
+                          <a:a name="ENABLE" value="false"/>
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        </d:var>
+                      </d:ctr>
+                    </d:lst>
+                  </d:ctr>
+                </d:lst>
+                <d:var name="CanMonitorSelfDiagDebouncing" type="ENUMERATION" 
+                       value="EVENT_DEBOUNCING_DEM">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+              </d:ctr>
+              <d:ctr name="CanMonitorGeneral" type="IDENTIFIABLE">
+                <d:var name="CanMonitorTaskTime" type="INTEGER" value="20"/>
+                <d:var name="CanMonitorPackageTitle" type="STRING" 
+                       value="EbSwcs"/>
+                <d:var name="EcuMPortInterfacePath" type="STRING" 
+                       value="/PortInterface"/>
+                <d:var name="EcuMModeDeclarationPath" type="STRING" 
+                       value="/ModeDeclarationGroup"/>
+                <d:var name="EcuMDataTypeMappingSetPath" type="STRING" 
+                       value="/ModeDeclarationGroup/EcuM_Mode_DataTypeMappingSet"/>
+              </d:ctr>
+            </d:ctr>
+          </d:chc>
+        </d:lst>
+      </d:ctr>
+    </d:lst>
+  </d:ctr>
+
+</datamodel>

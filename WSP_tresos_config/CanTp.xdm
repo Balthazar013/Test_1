@@ -1,0 +1,569 @@
+<?xml version='1.0'?>
+<datamodel version="3.0" 
+           xmlns="http://www.tresos.de/_projects/DataModel2/08/root.xsd" 
+           xmlns:a="http://www.tresos.de/_projects/DataModel2/08/attribute.xsd" 
+           xmlns:v="http://www.tresos.de/_projects/DataModel2/06/schema.xsd" 
+           xmlns:d="http://www.tresos.de/_projects/DataModel2/06/data.xsd">
+
+  <d:ctr type="AUTOSAR" factory="autosar" 
+         xmlns:ad="http://www.tresos.de/_projects/DataModel2/08/admindata.xsd" 
+         xmlns:icc="http://www.tresos.de/_projects/DataModel2/08/implconfigclass.xsd" 
+         xmlns:mt="http://www.tresos.de/_projects/DataModel2/11/multitest.xsd" >
+    <d:lst type="TOP-LEVEL-PACKAGES">
+      <d:ctr name="CanTp" type="AR-PACKAGE">
+        <d:lst type="ELEMENTS">
+          <d:chc name="CanTp" type="AR-ELEMENT" value="MODULE-CONFIGURATION">
+            <d:ctr type="MODULE-CONFIGURATION">
+              <a:a name="DEF" value="ASPath:/TS_TxDxM1I1R0_MLBevoStub/CanTp"/>
+              <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+              <a:a name="MODULE-DESCRIPTION-REF" 
+                   value="ASPath:/TS_TxDxM1I1R0_MLBevoStub/CanTp_Impl"/>
+              <d:var name="IMPLEMENTATION_CONFIG_VARIANT" type="ENUMERATION" 
+                     value="VariantPreCompile">
+                <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+              </d:var>
+              <d:ctr name="VectorCommonData" type="IDENTIFIABLE">
+                <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                <d:var name="BswmdVersion" type="STRING" value="1.24.00">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+              </d:ctr>
+              <d:ctr name="CanTpGeneral" type="IDENTIFIABLE">
+                <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                <d:var name="CanTpPaddingActive" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpDevErrorDetect" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpAmdRuntimeMeasurement" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpProdErrorDetect" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpVersionInfoApi" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpMainFunctionPeriod" type="FLOAT" 
+                       value="0.010000000474974513">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpTc" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpMaxNumTxSdus" type="INTEGER" value="1">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpMaxNumRxSdus" type="INTEGER" value="1">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpPaddingPattern" type="INTEGER" value="170">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpHavePaddingByte" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpPostbuildStartAddress" type="INTEGER" 
+                       value="0">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpDynamicChannelAssignment" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpMaxNumRxChannels" type="INTEGER" value="3">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpMaxNumTxChannels" type="INTEGER" value="3">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpMaxNumRxChannels_PbLimit" type="INTEGER" 
+                       value="3">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpMaxNumTxChannels_PbLimit" type="INTEGER" 
+                       value="3">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpOptimizeSingleConnection" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpOptimizeSingleConnPrec" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpEnableSplitMainFunction" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpEnableExtendedApiBs" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpEnableExtendedApiSTMin" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpChangeParameterReqApi" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpUserConfigFile" type="STRING" value="">
+                  <a:a name="ENABLE" value="true"/>
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpEnableRxNSduIdRemapping" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpEnableTxNSduIdRemapping" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpSupportFullBufferHandlingRx" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpSupportFullBufferHandlingTx" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpSupportStandardAddressing" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpSupportExtendedAddressing" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpSupportMixed11Addressing" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpEnableAr40CompliantPduRApi" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpFFProvide2RxBufferCalls" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpSuppressPrePassIndication" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpExtErrorDetect" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpHasRxIndication" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpHasTxConfirmation" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpHasInitCfgPtr" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpStrictRxCallSeq" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpSupportLowLevelRouting" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpLowLevelRoutingPrefix" type="STRING" 
+                       value="Cdd">
+                  <a:a name="ENABLE" value="true"/>
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpRc" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpRcNotifyAlways" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpTcNotifyAlways" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpOperNotSupportedReportDem" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpECommReportDem" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpIgnoreFcWithReservedStMin" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpIgnoreFcOvflAndInvalidFS" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpIgnoreCfWithWrongSN" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpUseOnlyFirstFc" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpEnableDcmRequestDetect" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpEnableSynchronousTransmit" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpEnableConstantBS" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpSuppressCancelErrorWhenIdle" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+                <d:var name="CanTpSuppressInvalidBufferFcOvfl" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                </d:var>
+              </d:ctr>
+              <d:lst name="CanTpConfigSet" type="MAP">
+                <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                <d:ctr name="CanTpConfigSet_0" type="IDENTIFIABLE">
+                  <d:lst name="CanTpActiveRxNSduRef"/>
+                  <d:lst name="CanTpActiveTxNSduRef"/>
+                </d:ctr>
+                <d:ctr name="CanTpConfigSet" type="IDENTIFIABLE">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  <d:lst name="CanTpActiveRxNSduRef">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    <d:ref type="REFERENCE" 
+                           value="ASPath:/CanTp/CanTp/Channel_0_RxNSdu">
+                      <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    </d:ref>
+                    <d:ref type="REFERENCE" 
+                           value="ASPath:/CanTp/CanTp/Channel_1_RxNSdu">
+                      <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    </d:ref>
+                  </d:lst>
+                  <d:lst name="CanTpActiveTxNSduRef">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    <d:ref type="REFERENCE" 
+                           value="ASPath:/CanTp/CanTp/Channel_0_TxNSdu">
+                      <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    </d:ref>
+                  </d:lst>
+                </d:ctr>
+              </d:lst>
+              <d:lst name="CanTpRxNSdu" type="MAP">
+                <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                <d:ctr name="Channel_0_RxNSdu" type="IDENTIFIABLE">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  <d:var name="CanTpCreatedByTool" type="BOOLEAN" value="false">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpBs" type="INTEGER" value="15">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpSTmin" type="INTEGER" value="5">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpRxDl" type="INTEGER" value="8">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpRxWftMax" type="INTEGER" value="15">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpRxChannel" type="INTEGER" value="0">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpAddressingFormat" type="ENUMERATION" 
+                         value="CANTP_STANDARD">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpRxPaddingActivation" type="ENUMERATION" 
+                         value="CANTP_ON">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpRxTaType" type="ENUMERATION" 
+                         value="CANTP_PHYSICAL">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpNar" type="FLOAT" 
+                         value="0.10000000149011612">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpNbr" type="FLOAT" value="0.800000011920929">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpNcr" type="FLOAT" value="1.0">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:ref name="CanTpRxNSduRef" type="REFERENCE" 
+                         value="ASPath:/EcuC/EcuC/PduCollection/Channel_0_RxNSdu">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:ref>
+                  <d:ctr name="CanTpRxNPdu" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    <a:a name="SHORT-NAME" type="NodeName" 
+                         value="ISOx_AWC_Req_Tp__MLBevo_HCAN_1"/>
+                    <d:var name="CanTpRxNPduId" type="INTEGER" value="0">
+                      <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    </d:var>
+                    <d:ref name="CanTpRxNPduRef" type="REFERENCE" 
+                           value="ASPath:/EcuC/EcuC/PduCollection/ISOx_AWC_Req_Tp__MLBevo_HCAN">
+                      <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="CanTpTxFcNPdu" type="IDENTIFIABLE">
+                    <a:a name="ENABLE" value="true"/>
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    <d:ref name="CanTpTxFcNPduRef" type="REFERENCE" 
+                           value="ASPath:/EcuC/EcuC/PduCollection/ISOx_AWC_Resp_Tp__MLBevo_HCAN">
+                      <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="CanTpNSa" type="IDENTIFIABLE">
+                    <a:a name="ENABLE" value="false"/>
+                    <d:var name="CanTpNSa" type="INTEGER" value="0">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="CanTpNTa" type="IDENTIFIABLE">
+                    <a:a name="ENABLE" value="false"/>
+                    <d:var name="CanTpNTa" type="INTEGER" value="0">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                  </d:ctr>
+                </d:ctr>
+                <d:ctr name="Channel_1_RxNSdu" type="IDENTIFIABLE">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  <d:var name="CanTpCreatedByTool" type="BOOLEAN" value="false">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpBs" type="INTEGER" value="15">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpSTmin" type="INTEGER" value="5">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpRxDl" type="INTEGER" value="8">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpRxWftMax" type="INTEGER" value="15">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpRxChannel" type="INTEGER" value="0">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpAddressingFormat" type="ENUMERATION" 
+                         value="CANTP_STANDARD">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpRxPaddingActivation" type="ENUMERATION" 
+                         value="CANTP_ON">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpRxTaType" type="ENUMERATION" 
+                         value="CANTP_FUNCTIONAL">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpNar" type="FLOAT" 
+                         value="0.10000000149011612">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpNbr" type="FLOAT" value="0.800000011920929">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpNcr" type="FLOAT" value="1.0">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:ref name="CanTpRxNSduRef" type="REFERENCE" 
+                         value="ASPath:/EcuC/EcuC/PduCollection/Channel_1_RxNSdu">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:ref>
+                  <d:ctr name="CanTpRxNPdu" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    <a:a name="SHORT-NAME" type="NodeName" 
+                         value="ISO_Funktionaler_Req_All_Tp__MLBevo_HCAN"/>
+                    <d:var name="CanTpRxNPduId" type="INTEGER" value="1">
+                      <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    </d:var>
+                    <d:ref name="CanTpRxNPduRef" type="REFERENCE" 
+                           value="ASPath:/EcuC/EcuC/PduCollection/ISO_Funktionaler_Req_All_Tp__MLBevo_HCAN">
+                      <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="CanTpTxFcNPdu" type="IDENTIFIABLE">
+                    <a:a name="ENABLE" value="true"/>
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    <d:ref name="CanTpTxFcNPduRef" type="REFERENCE" >
+                      <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="CanTpNSa" type="IDENTIFIABLE">
+                    <a:a name="ENABLE" value="false"/>
+                    <d:var name="CanTpNSa" type="INTEGER" value="0">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="CanTpNTa" type="IDENTIFIABLE">
+                    <a:a name="ENABLE" value="false"/>
+                    <d:var name="CanTpNTa" type="INTEGER" value="0">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                  </d:ctr>
+                </d:ctr>
+              </d:lst>
+              <d:lst name="CanTpTxNSdu" type="MAP">
+                <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                <d:ctr name="Channel_0_TxNSdu" type="IDENTIFIABLE">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  <d:var name="CanTpCreatedByTool" type="BOOLEAN" value="false">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpTxNSduId" type="INTEGER" value="0">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpTxPaddingActivation" type="ENUMERATION" 
+                         value="CANTP_ON">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpTxTaType" type="ENUMERATION" 
+                         value="CANTP_PHYSICAL">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpNas" type="FLOAT" 
+                         value="0.10000000474974513">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpNbs" type="FLOAT" value="1.0000000474974513">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpNcs" type="FLOAT" value="0.800000037997961">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpTxTc" type="BOOLEAN" value="true">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpTxDl" type="INTEGER" value="8">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpTxUpperLayerNSduId" type="INTEGER" value="0">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpTxChannel" type="INTEGER" value="0">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:var name="CanTpAddressingMode" type="ENUMERATION" 
+                         value="CANTP_STANDARD">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:ref name="CanTpTxNSduRef" type="REFERENCE" 
+                         value="ASPath:/EcuC/EcuC/PduCollection/Channel_0_TxNSdu">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:ref>
+                  <d:ctr name="CanTpNTa" type="IDENTIFIABLE">
+                    <a:a name="ENABLE" value="true"/>
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    <d:var name="CanTpNTa" type="INTEGER" value="0">
+                      <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="CanTpNSa" type="IDENTIFIABLE">
+                    <a:a name="ENABLE" value="true"/>
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    <d:var name="CanTpNSa" type="INTEGER" value="0">
+                      <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="CanTpRxFcNPdu" type="IDENTIFIABLE">
+                    <a:a name="ENABLE" value="true"/>
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    <a:a name="SHORT-NAME" type="NodeName" 
+                         value="ISOx_AWC_Req_Tp__MLBevo_HCAN"/>
+                    <d:var name="CanTpRxFcNPduId" type="INTEGER" value="0">
+                      <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    </d:var>
+                    <d:ref name="CanTpRxFcNPduRef" type="REFERENCE" 
+                           value="ASPath:/EcuC/EcuC/PduCollection/ISOx_AWC_Req_Tp__MLBevo_HCAN">
+                      <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="CanTpTxNPdu" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    <d:ref name="CanTpTxNPduRef" type="REFERENCE" 
+                           value="ASPath:/EcuC/EcuC/PduCollection/ISOx_AWC_Resp_Tp__MLBevo_HCAN">
+                      <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                    </d:ref>
+                  </d:ctr>
+                </d:ctr>
+              </d:lst>
+              <d:lst name="CanTpChannel" type="MAP">
+                <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                <d:ctr name="Channel_0" type="IDENTIFIABLE">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  <d:var name="CanTpChannelMode" type="ENUMERATION" 
+                         value="CANTP_MODE_FULL_DUPLEX">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:ref name="CanTpRxNSduRef" type="REFERENCE" 
+                         value="ASPath:/CanTp/CanTp/Channel_0_RxNSdu">
+                    <a:a name="ENABLE" value="true"/>
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:ref>
+                  <d:ref name="CanTpTxNSduRef" type="REFERENCE" 
+                         value="ASPath:/CanTp/CanTp/Channel_0_TxNSdu">
+                    <a:a name="ENABLE" value="true"/>
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:ref>
+                </d:ctr>
+                <d:ctr name="Channel_1" type="IDENTIFIABLE">
+                  <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  <d:var name="CanTpChannelMode" type="ENUMERATION" 
+                         value="CANTP_MODE_FULL_DUPLEX">
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:var>
+                  <d:ref name="CanTpRxNSduRef" type="REFERENCE" 
+                         value="ASPath:/CanTp/CanTp/Channel_1_RxNSdu">
+                    <a:a name="ENABLE" value="true"/>
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:ref>
+                  <d:ref name="CanTpTxNSduRef" type="REFERENCE" >
+                    <a:a name="ENABLE" value="true"/>
+                    <a:a name="IMPORTER_INFO" value="CanTP_Importer"/>
+                  </d:ref>
+                </d:ctr>
+              </d:lst>
+              <d:ctr name="CommonPublishedInformation" type="IDENTIFIABLE">
+                <d:var name="ArMajorVersion" type="INTEGER" value="2"/>
+                <d:var name="ArMinorVersion" type="INTEGER" value="0"/>
+                <d:var name="ArPatchVersion" type="INTEGER" value="1"/>
+                <d:var name="SwMajorVersion" type="INTEGER" value="1"/>
+                <d:var name="SwMinorVersion" type="INTEGER" value="1"/>
+                <d:var name="SwPatchVersion" type="INTEGER" value="0"/>
+                <d:var name="ModuleId" type="INTEGER" value="35">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorId" type="INTEGER" value="1">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorApiInfix" type="STRING" value="">
+                  <a:a name="ENABLE" value="false"/>
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="Release" type="STRING" value="">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+              </d:ctr>
+            </d:ctr>
+          </d:chc>
+        </d:lst>
+      </d:ctr>
+    </d:lst>
+  </d:ctr>
+
+</datamodel>

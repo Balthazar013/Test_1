@@ -1,0 +1,1508 @@
+<?xml version='1.0'?>
+<datamodel version="3.0" 
+           xmlns="http://www.tresos.de/_projects/DataModel2/08/root.xsd" 
+           xmlns:a="http://www.tresos.de/_projects/DataModel2/08/attribute.xsd" 
+           xmlns:v="http://www.tresos.de/_projects/DataModel2/06/schema.xsd" 
+           xmlns:d="http://www.tresos.de/_projects/DataModel2/06/data.xsd">
+
+  <d:ctr type="AUTOSAR" factory="autosar" 
+         xmlns:ad="http://www.tresos.de/_projects/DataModel2/08/admindata.xsd" 
+         xmlns:icc="http://www.tresos.de/_projects/DataModel2/08/implconfigclass.xsd" 
+         xmlns:mt="http://www.tresos.de/_projects/DataModel2/11/multitest.xsd" >
+    <d:lst type="TOP-LEVEL-PACKAGES">
+      <d:ctr name="EcuC" type="AR-PACKAGE">
+        <d:lst type="ELEMENTS">
+          <d:chc name="EcuC" type="AR-ELEMENT" value="MODULE-CONFIGURATION">
+            <d:ctr type="MODULE-CONFIGURATION">
+              <a:a name="DEF" value="ASPath:/TS_TxDxM1I1R0_MLBevoStub/EcuC"/>
+              <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+              <d:ctr name="CommonPublishedInformation" type="IDENTIFIABLE">
+                <d:var name="ArMajorVersion" type="INTEGER" value="2"/>
+                <d:var name="ArMinorVersion" type="INTEGER" value="0"/>
+                <d:var name="ArPatchVersion" type="INTEGER" value="1"/>
+                <d:var name="SwMajorVersion" type="INTEGER" value="1"/>
+                <d:var name="SwMinorVersion" type="INTEGER" value="1"/>
+                <d:var name="SwPatchVersion" type="INTEGER" value="0"/>
+                <d:var name="ModuleId" type="INTEGER" value="0">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorId" type="INTEGER" value="1">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorApiInfix" type="STRING" value="">
+                  <a:a name="ENABLE" value="false"/>
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="Release" type="STRING" value="">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+              </d:ctr>
+              <d:ctr name="PduCollection" type="IDENTIFIABLE">
+                <a:a name="ENABLE" value="true"/>
+                <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                <d:lst name="Pdu" type="MAP">
+                  <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                  <d:ctr name="ISO_Funktionaler_Req_All__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="56">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="ISO_Funktionaler_Req_All_Tp__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64"/>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="Channel_0_RxNSdu" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64"/>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="Channel_0_TxNSdu" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64"/>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="Channel_1_RxNSdu" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64"/>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="DEV_AWC_Resp_50__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="48">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="DEV_AWC_Resp_51__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="40">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="DEV_AWC_Resp_52__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="DEV_AWC_Resp_53__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="DEV_AWC_Resp_54__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="40">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="DEV_AWC_Resp_55__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="56">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="DEV_AWC_Resp_57__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="48">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="DEV_AWC_Resp_58__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="24">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="DEV_AWC_Resp_59__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="24">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="XCP_AWC_WS_CRO_01__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="XCP_AWC_WS_DTO_01__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="XCP_AWC_WS_DTO_02__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="DEV_AWC_Resp_56__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="DEV_AWC_Resp_62__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="DEV_AWC_Resp_63__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="DEV_AWC_Resp_64__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="ISOx_AWC_Req__MLBevo_HCAN" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="ISOx_AWC_Req_Tp__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="8"/>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="DEV_AWC_Resp_65__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="DEV_AWC_Resp_66__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="DEV_AWC_Resp_67__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="DEV_AWC_Resp_68__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="DEV_AWC_Resp_69__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="DEV_AWC_Resp_70__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="8">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="ISOx_AWC_Resp__MLBevo_HCAN" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="ISOx_AWC_Resp_Tp__MLBevo_HCAN" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="8"/>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_CHECKSUM__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_CONTROL__BT_CAN_MOD_V40" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="8">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_CURRENT_E1_E4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_CURRENT_E5_E8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_DEBUG_RX__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_DEBUG_TX__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E1_LH1_LH4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E1_LH13_LH16__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E1_LH5_LH8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E1_LH9_LH12__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E1_LV1_LV4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E1_LV13_LV16__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E1_LV5_LV8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E1_LV9_LV12__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E2_LH1_LH4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E2_LH13_LH16__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E2_LH5_LH8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E2_LH9_LH12__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E2_LV1_LV4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E2_LV13_LV16__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E2_LV5_LV8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E2_LV9_LV12__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E3_LH1_LH4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E3_LH13_LH16__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E3_LH5_LH8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E3_LH9_LH12__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E3_LV1_LV4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E3_LV13_LV16__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E3_LV5_LV8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E3_LV9_LV12__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E4_LH1_LH4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E4_LH13_LH16__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E4_LH5_LH8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E4_LH9_LH12__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E4_LV1_LV4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E4_LV13_LV16__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E4_LV5_LV8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E4_LV9_LV12__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E5_LH1_LH4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E5_LH13_LH16__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E5_LH5_LH8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E5_LH9_LH12__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E5_LV1_LV4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E5_LV13_LV16__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E5_LV5_LV8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E5_LV9_LV12__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E6_LH1_LH4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E6_LH13_LH16__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E6_LH5_LH8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E6_LH9_LH12__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E6_LV1_LV4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E6_LV13_LV16__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E6_LV5_LV8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E6_LV9_LV12__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E7_LH1_LH4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E7_LH13_LH16__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E7_LH5_LH8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E7_LH9_LH12__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E7_LV1_LV4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E7_LV13_LV16__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E7_LV5_LV8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E7_LV9_LV12__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E8_LH1_LH4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E8_LH13_LH16__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E8_LH5_LH8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E8_LH9_LH12__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E8_LV1_LV4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E8_LV13_LV16__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E8_LV5_LV8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_E8_LV9_LV12__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="FOD_STATUS__BT_CAN_MOD_V40" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="40">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_CHECKSUM__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_NEAR_LH1_LH2__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_NEAR_LH11_LH12__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_NEAR_LH13_LH14__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_NEAR_LH15_LH16__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_NEAR_LH3_LH4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_NEAR_LH5_LH6__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_NEAR_LH7_LH8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_NEAR_LH9_LH10__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_NEAR_LV1_LV2__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_NEAR_LV11_LV12__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_NEAR_LV13_LV14__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_NEAR_LV15_LV16__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_NEAR_LV3_LV4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_NEAR_LV5_LV6__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_NEAR_LV7_LV8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_NEAR_LV9_LV10__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="RES_CHECKSUM__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="RES_FOD_CURRENT_REF_COIL__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="RES_FOD_LH1_LH4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="RES_FOD_LH13_LH16__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="RES_FOD_LH5_LH8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="RES_FOD_LH9_LH12__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="RES_FOD_LV1_LV4__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="RES_FOD_LV13_LV16__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="RES_FOD_LV5_LV8__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="RES_FOD_LV9_LV12__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="RES_POS_FAR__BT_CAN_MOD_V40" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_FAR_LEFT_LX__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_FAR_LEFT_LY__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_FAR_RIGHT_LX__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="POS_FAR_RIGHT_LY__BT_CAN_MOD_V40" 
+                         type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    <d:var name="PduLength" type="INTEGER" value="64">
+                      <a:a name="IMPORTER_INFO" value="EcuC_Importer"/>
+                    </d:var>
+                    <d:ref name="SysTPduToFrameMappingRef" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                  </d:ctr>
+                </d:lst>
+              </d:ctr>
+            </d:ctr>
+          </d:chc>
+        </d:lst>
+      </d:ctr>
+    </d:lst>
+  </d:ctr>
+
+</datamodel>

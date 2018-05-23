@@ -1,0 +1,305 @@
+<?xml version='1.0'?>
+<datamodel version="3.0" 
+           xmlns="http://www.tresos.de/_projects/DataModel2/08/root.xsd" 
+           xmlns:a="http://www.tresos.de/_projects/DataModel2/08/attribute.xsd" 
+           xmlns:v="http://www.tresos.de/_projects/DataModel2/06/schema.xsd" 
+           xmlns:d="http://www.tresos.de/_projects/DataModel2/06/data.xsd">
+
+  <d:ctr type="AUTOSAR" factory="autosar" 
+         xmlns:ad="http://www.tresos.de/_projects/DataModel2/08/admindata.xsd" 
+         xmlns:icc="http://www.tresos.de/_projects/DataModel2/08/implconfigclass.xsd" 
+         xmlns:mt="http://www.tresos.de/_projects/DataModel2/11/multitest.xsd" >
+    <d:lst type="TOP-LEVEL-PACKAGES">
+      <d:ctr name="ComM" type="AR-PACKAGE">
+        <d:lst type="ELEMENTS">
+          <d:chc name="ComM" type="AR-ELEMENT" value="MODULE-CONFIGURATION">
+            <d:ctr type="MODULE-CONFIGURATION">
+              <a:a name="DEF" value="ASPath:/TS_TxDxM1I1R0_MLBevoStub/ComM"/>
+              <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+              <a:a name="MODULE-DESCRIPTION-REF" 
+                   value="ASPath:/TS_TxDxM1I1R0_MLBevoStub/ComM_Impl"/>
+              <d:var name="IMPLEMENTATION_CONFIG_VARIANT" type="ENUMERATION" 
+                     value="VariantPreCompile">
+                <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+              </d:var>
+              <d:ctr name="ComMGeneral" type="IDENTIFIABLE">
+                <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                <d:var name="ComMPncSupport" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:var name="ComMUseRte" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:var name="ComMModeLimitationEnabled" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:var name="ComMProdErrorDetect" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:var name="ComMDevErrorDetect" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:var name="ComMVersionInfoApi" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:var name="ComMResetAfterForcingNoComm" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:var name="ComMPncPrepareSleepTimer" type="FLOAT" value="0.25">
+                  <a:a name="ENABLE" value="true"/>
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:var name="ComMEcuGroupClassification" type="INTEGER" 
+                       value="3">
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:var name="ComMNoCom" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:var name="ComMSynchronousWakeUp" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:var name="ComMTMinFullComModeDuration" type="FLOAT" 
+                       value="5.0">
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:var name="ComMWakeupInhibitionEnabled" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:var name="ComMSoftwareComponentName" type="STRING" 
+                       value="ComM">
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:var name="ComMReqModePortPrefix" type="STRING" value="UR_">
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:var name="ComMCurrentModePortPrefix" type="STRING" 
+                       value="UM_">
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:var name="ComMAmdRuntimeMeasurement" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:var name="ComMUserConfigurationFilePath" type="STRING" 
+                       value="D:\PRJ\_br_IC_C_ARCHA\Audi\07_Development\40_SW\30_Implementation\10_WSP\06_BUILD_ENV\01_BUILD\..\..\05_BSW\01_Config\application_geny\Config\GenyCFGFiles\ComM.cfg">
+                  <a:a name="ENABLE" value="true"/>
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:var name="ComMGlobalNvmBlockDescString" type="STRING" 
+                       value="">
+                  <a:a name="ENABLE" value="true"/>
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:var name="ComMPncGatewayEnabled" type="BOOLEAN" value="false">
+                  <a:a name="ENABLE" value="true"/>
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:var name="ComMLimitPncToChannelRouting" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="ENABLE" value="true"/>
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                </d:var>
+                <d:ref name="ComMGlobalNvmBlockDescriptor" type="REFERENCE" >
+                  <a:a name="ENABLE" value="false"/>
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:ref>
+              </d:ctr>
+              <d:lst name="ComMConfigSet" type="MAP">
+                <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                <d:ctr name="ComMConfigSet_0" type="IDENTIFIABLE">
+                  <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                  <d:lst name="ComMChannel" type="MAP">
+                    <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                    <d:ctr name="MLBevo_HCAN" type="IDENTIFIABLE">
+                      <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      <d:var name="ComMBusType" type="ENUMERATION" 
+                             value="COMM_BUS_TYPE_CAN">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:var name="ComMChannelId" type="INTEGER" value="1">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:var name="ComMMainFunctionPeriod" type="FLOAT" 
+                             value="0.02">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:var name="ComMNoCom" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:var name="ComMNoFullCom" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:var name="ComMNoWakeup" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:var name="ComMChannelWakeUpPortPrefix" type="STRING" 
+                             value="CW_">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:var name="ComMChannelLimitPortPrefix" type="STRING" 
+                             value="CL_">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:var name="ComMModeNotificationToDcm" type="BOOLEAN" 
+                             value="true">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:var name="ComMPncGatewayType" type="ENUMERATION" 
+                             value="COMM_GATEWAY_TYPE_NONE">
+                        <a:a name="ENABLE" value="true"/>
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:ctr name="ComMNetworkManagement" type="IDENTIFIABLE">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                        <d:var name="ComMNmLightTimeout" type="FLOAT" 
+                               value="10.0">
+                          <a:a name="ENABLE" value="true"/>
+                          <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                        </d:var>
+                        <d:var name="ComMNmVariant" type="ENUMERATION" 
+                               value="LIGHT">
+                          <a:a name="ENABLE" value="true"/>
+                          <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                        </d:var>
+                      </d:ctr>
+                      <d:lst name="ComMUserPerChannel" type="MAP">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                        <d:ctr name="ComMUser_MLBevo_HCAN" type="IDENTIFIABLE">
+                          <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                          <d:ref name="ComMUserChannel" type="REFERENCE" 
+                                 value="ASPath:/ComM/ComM/ComMConfigSet_0/ComMUser_MLBevo_HCAN">
+                            <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                          </d:ref>
+                        </d:ctr>
+                      </d:lst>
+                      <d:ref name="ComMNvmBlockDescriptor" type="REFERENCE" >
+                        <a:a name="ENABLE" value="false"/>
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:ref>
+                    </d:ctr>
+                    <d:ctr name="BT_CAN_MOD_V40" type="IDENTIFIABLE">
+                      <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      <d:var name="ComMBusType" type="ENUMERATION" 
+                             value="COMM_BUS_TYPE_CAN">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:var name="ComMChannelId" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:var name="ComMMainFunctionPeriod" type="FLOAT" 
+                             value="0.02">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:var name="ComMNoCom" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:var name="ComMNoFullCom" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:var name="ComMNoWakeup" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:var name="ComMChannelWakeUpPortPrefix" type="STRING" 
+                             value="CW_">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:var name="ComMChannelLimitPortPrefix" type="STRING" 
+                             value="CL_">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:var name="ComMModeNotificationToDcm" type="BOOLEAN" 
+                             value="true">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:var name="ComMPncGatewayType" type="ENUMERATION" 
+                             value="COMM_GATEWAY_TYPE_NONE">
+                        <a:a name="ENABLE" value="true"/>
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:ctr name="ComMNetworkManagement" type="IDENTIFIABLE">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                        <d:var name="ComMNmLightTimeout" type="FLOAT" 
+                               value="10.0">
+                          <a:a name="ENABLE" value="true"/>
+                          <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                        </d:var>
+                        <d:var name="ComMNmVariant" type="ENUMERATION" 
+                               value="LIGHT">
+                          <a:a name="ENABLE" value="true"/>
+                          <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                        </d:var>
+                      </d:ctr>
+                      <d:lst name="ComMUserPerChannel" type="MAP">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                        <d:ctr name="ComMUser_MLBevo_HCAN" type="IDENTIFIABLE">
+                          <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                          <d:ref name="ComMUserChannel" type="REFERENCE" 
+                                 value="ASPath:/ComM/ComM/ComMConfigSet_0/ComMUser_MLBevo_HCAN">
+                            <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                          </d:ref>
+                        </d:ctr>
+                      </d:lst>
+                      <d:ref name="ComMNvmBlockDescriptor" type="REFERENCE" >
+                        <a:a name="ENABLE" value="false"/>
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:ref>
+                    </d:ctr>
+                  </d:lst>
+                  <d:lst name="ComMPnc" type="MAP"/>
+                  <d:lst name="ComMUser" type="MAP">
+                    <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                    <d:ctr name="ComMUser_MLBevo_HCAN" type="IDENTIFIABLE">
+                      <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      <d:var name="ComMUserIdentifier" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:var name="ComMModeNotification" type="BOOLEAN" 
+                             value="false">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                      <d:var name="ComMSystemUser" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                      </d:var>
+                    </d:ctr>
+                  </d:lst>
+                </d:ctr>
+              </d:lst>
+              <d:ctr name="CommonPublishedInformation" type="IDENTIFIABLE">
+                <d:var name="ArMajorVersion" type="INTEGER" value="2"/>
+                <d:var name="ArMinorVersion" type="INTEGER" value="0"/>
+                <d:var name="ArPatchVersion" type="INTEGER" value="1"/>
+                <d:var name="SwMajorVersion" type="INTEGER" value="1"/>
+                <d:var name="SwMinorVersion" type="INTEGER" value="1"/>
+                <d:var name="SwPatchVersion" type="INTEGER" value="0"/>
+                <d:var name="ModuleId" type="INTEGER" value="12">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorId" type="INTEGER" value="1">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorApiInfix" type="STRING" value="">
+                  <a:a name="ENABLE" value="false"/>
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="Release" type="STRING" value="">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+              </d:ctr>
+              <d:ctr name="VectorCommonData" type="IDENTIFIABLE">
+                <a:a name="IMPORTER_INFO" value="ComM_Importer"/>
+                <d:var name="BswmdVersion" type="STRING" value="2.17.05">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+              </d:ctr>
+            </d:ctr>
+          </d:chc>
+        </d:lst>
+      </d:ctr>
+    </d:lst>
+  </d:ctr>
+
+</datamodel>
